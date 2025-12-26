@@ -1,98 +1,70 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import {Text, View, Image, TouchableOpacity} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import {icons} from "@/constants/icons";
+import ImageCarousel from "@/Components/ImageCarousel";
 
-import { HelloWave } from '@/components/hello-wave';
-import ParallaxScrollView from '@/components/parallax-scroll-view';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
-
-export default function HomeScreen() {
+export default function Index() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <Link href="/modal">
-          <Link.Trigger>
-            <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-          </Link.Trigger>
-          <Link.Preview />
-          <Link.Menu>
-            <Link.MenuAction title="Action" icon="cube" onPress={() => alert('Action pressed')} />
-            <Link.MenuAction
-              title="Share"
-              icon="square.and.arrow.up"
-              onPress={() => alert('Share pressed')}
-            />
-            <Link.Menu title="More" icon="ellipsis">
-              <Link.MenuAction
-                title="Delete"
-                icon="trash"
-                destructive
-                onPress={() => alert('Delete pressed')}
-              />
-            </Link.Menu>
-          </Link.Menu>
-        </Link>
+      <SafeAreaView className="flex-1 bg-white items-center">
 
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+          {/* 1. CONTAINER FOR TOP + CARD (Grouped together) */}
+          <View className="items-center w-full">
+
+              {/* TOP TEXT - Moved higher by removing extra padding/margins */}
+              <View className="mt-1">
+                  <Text className="font-bold text-blue-400 text-2xl">fido</Text>
+              </View>
+
+              {/* CARD SECTION - mt-4 (16px) or mt-2 (8px) for a smaller gap */}
+              <View className="items-center mt-4">
+                  <View className="w-[300px]">
+                      <ImageCarousel />
+                      <View className="flex-row justify-between items-center mt-3">
+                          <Text className="font-bold text-gray-600 text-2xl">
+                              Species
+                          </Text>
+
+                          <TouchableOpacity
+                              className="bg-gray-100 px-3 py-1.5 rounded-full"
+                              activeOpacity={0.6}
+                          >
+                              <Text className="text-blue-500 font-semibold text-sm">
+                                  View more
+                              </Text>
+                          </TouchableOpacity>
+                      </View>
+                  </View>
+              </View>
+          </View>
+
+          {/* 2. BUTTONS - Pushed to the bottom using absolute positioning or flex-end */}
+          <View className="absolute bottom-7 flex-row items-center justify-center w-full gap-8">
+
+              {/* DISLIKE BUTTON */}
+              <TouchableOpacity
+                  className="w-16 h-16 bg-white rounded-full items-center justify-center shadow-lg border-4 border-red-500"
+                  activeOpacity={0.7}
+              >
+                  <Image
+                      source={icons.dislike}
+                      className="w-16 h-16" // Doubled the icon inside too
+                      resizeMode="contain"
+                  />
+              </TouchableOpacity>
+
+              {/* LIKE BUTTON - With Green Hollow Circle */}
+              <TouchableOpacity
+                  className="w-16 h-16 bg-white rounded-full items-center justify-center shadow-lg border-4 border-green-500"
+                  activeOpacity={0.7}
+              >
+                  <Image
+                      source={icons.like}
+                      className="w-16 h-16" // Doubled the icon inside too
+                      resizeMode="contain"
+                  />
+              </TouchableOpacity>
+          </View>
+
+      </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
-  },
-});
