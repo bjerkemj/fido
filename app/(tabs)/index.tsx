@@ -17,7 +17,7 @@ export default function Index() {
 
               {/* CARD SECTION - mt-4 (16px) or mt-2 (8px) for a smaller gap */}
               <View className="items-center mt-4">
-                  <View className="w-[300px]">
+                  <View className="w-[320px]">
                       <ImageCarousel />
                       <View className="flex-row justify-between items-center mt-3">
                           <Text className="font-bold text-gray-600 text-2xl">
