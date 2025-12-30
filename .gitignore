@@ -60,3 +60,12 @@ local.properties
 .vscode/
 .vs/
 *.swp
+
+# --- Python & Data ---
+.venv/
+venv/
+dog_data/
+scripts/
+
+# --- Misc ---
+dogs.html

@@ -1,7 +1,7 @@
 import {Text, View, Image, TouchableOpacity} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {icons} from "@/constants/icons";
-import ImageCarousel from "@/Components/ImageCarousel";
+import ImageCarousel from "@/components/ImageCarousel";
 
 export default function Index() {
   return (
