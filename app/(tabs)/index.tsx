@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { icons } from "@/constants/icons";
 import ImageCarousel from "@/components/ImageCarousel";
 import allDogs from "@/assets/data/dogs.json";
-import { Dog, DogImage } from "@/types/dog";
+import { Dog } from "@/types/dog";
 import { getUnseenDogs, addLikedDog, addDislikedDog } from "@/utils/dogStorage";
 
 export default function Index() {
@@ -15,7 +15,6 @@ export default function Index() {
     // Load unseen dogs on mount
     useEffect(() => {
         const loadDogs = async () => {
-            // Filter to only dogs with images
             const dogsWithImages = (allDogs as Dog[]).filter(dog =>
                 Array.isArray(dog.images) && dog.images.length > 0
             );
@@ -73,77 +72,96 @@ export default function Index() {
     const currentDog = unseenDogs[currentIndex];
     const images = Array.isArray(currentDog.images) ? currentDog.images : [];
 
+    // Get next 2 dogs for pre-rendering
+    const nextDogs = unseenDogs.slice(currentIndex + 1, currentIndex + 3);
+
     return (
-        <SafeAreaView className="flex-1 bg-white items-center">
-            <View className="items-center w-full">
-                {/* TOP TEXT */}
-                <View className="mt-1">
-                    <Text className="font-bold text-blue-400 text-2xl">fido</Text>
+        <SafeAreaView className="flex-1 bg-white">
+            {/* FIXED HEADER */}
+            <View className="items-center">
+                <Text className="font-bold text-blue-400 text-2xl">fido</Text>
+            </View>
+
+            {/* FLEXIBLE MIDDLE - Takes remaining space */}
+            <View className="flex-1 items-center justify-center px-4">
+                {/* Current dog carousel - visible */}
+                <ImageCarousel
+                    key={currentDog.name}
+                    images={images}
+                />
+
+                {/* Pre-render next dogs off-screen */}
+                <View style={{ position: 'absolute', left: -10000, top: 0 }}>
+                    {nextDogs.map((dog) => {
+                        const dogImages = Array.isArray(dog.images) ? dog.images : [];
+                        return (
+                            <ImageCarousel
+                                key={dog.name}
+                                images={dogImages}
+                            />
+                        );
+                    })}
+                </View>
+            </View>
+
+            {/* FIXED FOOTER */}
+            <View className="px-6">
+                {/* Dog Name */}
+                <View className="mb-1">
+                    <Text className="font-bold text-gray-600 text-2xl">
+                        {currentDog.name}
+                    </Text>
                 </View>
 
-                {/* CARD SECTION */}
-                <View className="items-center mt-4">
-                    <View className="w-[320px]">
-                        {/* Pass images to carousel - key forces remount on dog change */}
-                        <ImageCarousel
-                            key={currentDog.name}
-                            images={images}
+                {/* Temperament and View More */}
+                <View className="flex-row justify-between items-center mb-4">
+                    {currentDog.temperament ? (
+                        <Text className="text-gray-500 text-sm flex-1 mr-2">
+                            {currentDog.temperament}
+                        </Text>
+                    ) : (
+                        <View className="flex-1" />
+                    )}
+
+                    <TouchableOpacity
+                        className="bg-gray-100 px-3 py-1.5 rounded-full"
+                        activeOpacity={0.6}
+                    >
+                        <Text className="text-blue-500 font-semibold text-sm">
+                            View more
+                        </Text>
+                    </TouchableOpacity>
+                </View>
+
+                {/* Buttons */}
+                <View className="flex-row items-center justify-center gap-8">
+                    {/* DISLIKE BUTTON */}
+                    <TouchableOpacity
+                        className="w-16 h-16 bg-white rounded-full items-center justify-center shadow-lg border-4 border-red-500"
+                        activeOpacity={0.7}
+                        onPress={handleDislike}
+                    >
+                        <Image
+                            source={icons.dislike}
+                            className="w-16 h-16"
+                            resizeMode="contain"
                         />
+                    </TouchableOpacity>
 
-                        <View className="flex-row justify-between items-center mt-3">
-                            <Text className="font-bold text-gray-600 text-2xl">
-                                {currentDog.name}
-                            </Text>
-
-                            <TouchableOpacity
-                                className="bg-gray-100 px-3 py-1.5 rounded-full"
-                                activeOpacity={0.6}
-                            >
-                                <Text className="text-blue-500 font-semibold text-sm">
-                                    View more
-                                </Text>
-                            </TouchableOpacity>
-                        </View>
-
-                        {/* Optional: Show temperament */}
-                        {currentDog.temperament && (
-                            <Text className="text-gray-500 text-sm mt-2">
-                                {currentDog.temperament}
-                            </Text>
-                        )}
-                    </View>
+                    {/* LIKE BUTTON */}
+                    <TouchableOpacity
+                        className="w-16 h-16 bg-white rounded-full items-center justify-center shadow-lg border-4 border-green-500"
+                        activeOpacity={0.7}
+                        onPress={handleLike}
+                    >
+                        <Image
+                            source={icons.like}
+                            className="w-16 h-16"
+                            resizeMode="contain"
+                        />
+                    </TouchableOpacity>
                 </View>
             </View>
-
-            {/* BUTTONS */}
-            <View className="absolute bottom-7 flex-row items-center justify-center w-full gap-8">
-                {/* DISLIKE BUTTON */}
-                <TouchableOpacity
-                    className="w-16 h-16 bg-white rounded-full items-center justify-center shadow-lg border-4 border-red-500"
-                    activeOpacity={0.7}
-                    onPress={handleDislike}
-                >
-                    <Image
-                        source={icons.dislike}
-                        className="w-16 h-16"
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
-
-                {/* LIKE BUTTON */}
-                <TouchableOpacity
-                    className="w-16 h-16 bg-white rounded-full items-center justify-center shadow-lg border-4 border-green-500"
-                    activeOpacity={0.7}
-                    onPress={handleLike}
-                >
-                    <Image
-                        source={icons.like}
-                        className="w-16 h-16"
-                        resizeMode="contain"
-                    />
-                </TouchableOpacity>
-            </View>
-
         </SafeAreaView>
     );
 }

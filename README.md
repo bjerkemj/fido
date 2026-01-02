@@ -17,10 +17,9 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```
 
 Todo:
-* dog info comes beneath button: manually fix, and later create permanent dynamic solution
-* when a dog is (dis)liked, the photos for the next dog is not pre rendered. would be nice if 3-5 next dogs are allways pre rendered.
-* remove the counter of remaining dogs
+* when a dog is (dis)liked, the photos for the next dog is not pre rendered. would be nice if 3-5 next dogs are always pre rendered. Sort of fixed, but need more time later
 * create the view more section
 * remember to give credit to photographers
-* affiliate links
 * personal page with liked dogs
+* affiliate links
+* Check all photos, and update where needed

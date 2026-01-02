@@ -1,4 +1,4 @@
-import { View, FlatList, Image, Pressable, Text, ActivityIndicator } from 'react-native';
+import { View, FlatList, Image, Pressable, Text, ActivityIndicator, useWindowDimensions } from 'react-native';
 import { useRef, useState } from 'react';
 import { DogImage } from '@/types/dog';
 
@@ -6,12 +6,16 @@ interface ImageCarouselProps {
     images: DogImage[];
 }
 
-const CARD_WIDTH = 320;
-const CARD_HEIGHT = 520;
 const CARD_BORDER_RADIUS = 16;
-const TAP_THRESHOLD = CARD_WIDTH / 2;
 
 const ImageCarousel = ({ images }: ImageCarouselProps) => {
+    const { width, height } = useWindowDimensions();
+
+    // Calculate card dimensions based on screen size
+    const CARD_WIDTH = Math.min(width * 0.9, 400); // 90% of screen width, max 400
+    const CARD_HEIGHT = height * 0.57; // 57% of screen height for dynamic sizing
+    const TAP_THRESHOLD = CARD_WIDTH / 2;
+
     const flatListRef = useRef<FlatList>(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [imageErrors, setImageErrors] = useState<{ [key: number]: boolean }>({});
@@ -62,7 +66,7 @@ const ImageCarousel = ({ images }: ImageCarouselProps) => {
     }
 
     return (
-        <View style={{ height: CARD_HEIGHT, position: 'relative' }}>
+        <View style={{ height: CARD_HEIGHT, width: CARD_WIDTH }}>
             <FlatList
                 ref={flatListRef}
                 data={images}
