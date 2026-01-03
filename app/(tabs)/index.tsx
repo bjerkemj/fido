@@ -6,11 +6,13 @@ import ImageCarousel from "@/components/ImageCarousel";
 import allDogs from "@/assets/data/dogs.json";
 import { Dog } from "@/types/dog";
 import { getUnseenDogs, addLikedDog, addDislikedDog } from "@/utils/dogStorage";
+import DogDetailModal from "@/components/DogDetailModal";
 
 export default function Index() {
     const [unseenDogs, setUnseenDogs] = useState<Dog[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [loading, setLoading] = useState(true);
+    const [modalVisible, setModalVisible] = useState(false);
 
     // Load unseen dogs on mount
     useEffect(() => {
@@ -126,6 +128,7 @@ export default function Index() {
                     <TouchableOpacity
                         className="bg-gray-100 px-3 py-1.5 rounded-full"
                         activeOpacity={0.6}
+                        onPress={() => setModalVisible(true)} // Add this
                     >
                         <Text className="text-blue-500 font-semibold text-sm">
                             View more
@@ -162,6 +165,11 @@ export default function Index() {
                     </TouchableOpacity>
                 </View>
             </View>
+            <DogDetailModal
+                visible={modalVisible}
+                dog={currentDog}
+                onClose={() => setModalVisible(false)}
+            />
         </SafeAreaView>
     );
 }
