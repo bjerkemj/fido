@@ -252,12 +252,6 @@ const DogDetailModal = ({ visible, dog, onClose }: DogDetailModalProps) => {
 
                                 />
 
-                                {dog.popularity && (
-
-                                    <StatRow label="Popularity Rank" value={`#${dog.popularity}`} />
-
-                                )}
-
                             </View>
 
                         </View>

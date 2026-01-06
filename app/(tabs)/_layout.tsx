@@ -12,9 +12,9 @@ const _Layout = () => {
                     headerShown: false,
                 }} />
             <Tabs.Screen
-                name='profile'
+                name='match-center'
                 options={{
-                    title: 'Profile',
+                    title: 'Match Center',
                     headerShown: false,
                 }} />
             <Tabs.Screen

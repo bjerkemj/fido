@@ -1,0 +1,156 @@
+import React, { useState, useCallback } from 'react'; // Added useCallback
+import { View, Text, ScrollView, TouchableOpacity, Image, Dimensions } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { useFocusEffect, useRouter } from "expo-router"; // Added useFocusEffect
+import { getLikedDogs, getDislikedDogs } from '@/utils/dogStorage';
+import allDogs from '@/assets/data/dogs.json';
+import { Dog } from '@/types/dog';
+import { Ionicons } from "@expo/vector-icons";
+
+const SCREEN_WIDTH = Dimensions.get('window').width;
+
+const MatchCenter = () => {
+    const [likedList, setLikedList] = useState<Dog[]>([]);
+    const [dislikedList, setDislikedList] = useState<Dog[]>([]);
+    const router = useRouter();
+
+    // Re-fetch data every time the user navigates back to this screen
+    useFocusEffect(
+        useCallback(() => {
+            const loadData = async () => {
+                const likedNames = await getLikedDogs();
+                const dislikedNames = await getDislikedDogs();
+
+                const likedData = allDogs.filter(d => likedNames.includes(d.name)) as Dog[];
+                const dislikedData = allDogs.filter(d => dislikedNames.includes(d.name)) as Dog[];
+
+                setLikedList(likedData);
+                setDislikedList(dislikedData);
+            };
+
+            loadData();
+        }, [])
+    );
+
+    return (
+        <SafeAreaView className="flex-1 bg-white">
+            <ScrollView className="flex-1" showsVerticalScrollIndicator={false}>
+                {/* HEADER */}
+                <View className="px-6 py-4">
+                    <Text className="text-3xl font-extrabold text-gray-800">Match Center</Text>
+                    <Text className="text-gray-500">Manage your pack and shared matches</Text>
+                </View>
+
+                {/* PARTNER SYNC PLACEHOLDER */}
+                <TouchableOpacity
+                    className="mx-6 mb-8 p-6 rounded-3xl bg-blue-50 border-2 border-blue-100 flex-row items-center justify-between"
+                    activeOpacity={0.9}
+                >
+                    <View className="flex-1 mr-4">
+                        <Text className="text-blue-600 font-bold text-lg">Better Together</Text>
+                        <Text className="text-blue-400 text-sm">Link with a partner to see which dogs you both love!</Text>
+                    </View>
+                    <View className="bg-blue-400 p-3 rounded-full">
+                        <Text className="text-white font-bold">Link</Text>
+                    </View>
+                </TouchableOpacity>
+
+                {/* SECTIONS */}
+                <DogSection
+                    title="Liked Dogs"
+                    dogs={likedList}
+                    accentColor="#4ade80"
+                    count={likedList.length}
+                    onPressMore={() => router.push('/dog-list/liked')}
+                />
+
+                <View className="mt-6">
+                    <DogSection
+                        title="Disliked Dogs"
+                        dogs={dislikedList}
+                        accentColor="#f87171"
+                        count={dislikedList.length}
+                        onPressMore={() => router.push('/dog-list/disliked')}
+                    />
+                </View>
+
+                {/* PREMIUM SECTION */}
+                <View className="mx-6 my-10 p-8 rounded-[32px] bg-amber-50/30 border-2 border-amber-200/50 items-center">
+                    <View className="flex-row items-center mb-4">
+                        <Ionicons name="sparkles" size={16} color="#D4AF37" />
+                        <Text style={{ color: '#D4AF37' }} className="font-bold uppercase tracking-[3px] text-[10px] ml-2">
+                            Fido Premium
+                        </Text>
+                    </View>
+                    <Text className="text-gray-600 text-center mb-6 leading-5 px-4">
+                        Unlock advanced breed filters and sync your pack with a partner.
+                    </Text>
+                    <TouchableOpacity
+                        activeOpacity={0.8}
+                        style={{ backgroundColor: '#D4AF37', elevation: 5 }}
+                        className="px-8 py-3 rounded-full"
+                    >
+                        <Text className="text-white font-bold text-sm">Upgrade Now</Text>
+                    </TouchableOpacity>
+                </View>
+            </ScrollView>
+        </SafeAreaView>
+    );
+};
+
+// --- SUB-COMPONENT ---
+// Added onPressMore prop to make navigation cleaner
+const DogSection = ({ title, dogs, accentColor, count, onPressMore }: { title: string, dogs: Dog[], accentColor: string, count: number, onPressMore: () => void }) => {
+    const previewDogs = dogs.slice(0, 6);
+
+    return (
+        <View className="w-full">
+            <View className="flex-row justify-between items-center px-6 mb-4">
+                <View className="flex-row items-center">
+                    <View style={{ backgroundColor: accentColor }} className="w-2 h-8 rounded-full mr-3" />
+                    <Text className="text-xl font-bold text-gray-800">{title}</Text>
+                    <Text className="ml-2 text-gray-400 font-medium">({count})</Text>
+                </View>
+                <TouchableOpacity onPress={onPressMore}>
+                    <Text style={{ color: '#60a5fa' }} className="font-bold">View more</Text>
+                </TouchableOpacity>
+            </View>
+
+            <TouchableOpacity
+                activeOpacity={0.9}
+                onPress={onPressMore}
+                className="px-6 flex-row flex-wrap justify-between overflow-hidden"
+                style={{ maxHeight: 180 }}
+            >
+                {previewDogs.length > 0 ? (
+                    previewDogs.map((dog) => (
+                        <View key={dog.name} className="mb-4">
+                            <Image
+                                source={{ uri: dog.images[0]?.url }}
+                                style={{ width: (SCREEN_WIDTH - 64) / 3, height: 100 }}
+                                className="rounded-2xl bg-gray-100"
+                            />
+                            <Text numberOfLines={1} className="text-[10px] font-bold text-gray-500 mt-1 w-20 text-center">
+                                {dog.name}
+                            </Text>
+                        </View>
+                    ))
+                ) : (
+                    <View className="w-full py-10 items-center justify-center bg-gray-50 rounded-3xl border border-dashed border-gray-200">
+                        <Text className="text-gray-400 italic">No dogs here yet...</Text>
+                    </View>
+                )}
+
+                {dogs.length > 3 && (
+                    <View
+                        pointerEvents="none"
+                        className="absolute bottom-0 left-0 right-0 h-16"
+                        style={{ backgroundColor: 'rgba(255,255,255,0.7)' }}
+                    />
+                )}
+            </TouchableOpacity>
+        </View>
+    );
+};
+
+export default MatchCenter;

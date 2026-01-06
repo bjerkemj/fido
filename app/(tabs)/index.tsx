@@ -42,9 +42,7 @@ export default function Index() {
     };
 
     const moveToNext = () => {
-        if (currentIndex < unseenDogs.length - 1) {
-            setCurrentIndex(currentIndex + 1);
-        }
+        setCurrentIndex(prevIndex => prevIndex + 1);
     };
 
     // Loading state
@@ -62,10 +60,10 @@ export default function Index() {
         return (
             <SafeAreaView className="flex-1 bg-white items-center justify-center">
                 <Text className="text-2xl font-bold text-gray-800">
-                    🎉 All done!
+                    All done!
                 </Text>
                 <Text className="mt-2 text-gray-600">
-                    You've seen all {unseenDogs.length} dogs
+                    You've seen all the dogs
                 </Text>
             </SafeAreaView>
         );
@@ -140,7 +138,7 @@ export default function Index() {
                 <View className="flex-row items-center justify-center gap-8">
                     {/* DISLIKE BUTTON */}
                     <TouchableOpacity
-                        className="w-16 h-16 bg-white rounded-full items-center justify-center shadow-lg border-4 border-red-500"
+                        className="w-16 h-16 bg-white rounded-full items-center justify-center shadow-lg border-4 border-red-400"
                         activeOpacity={0.7}
                         onPress={handleDislike}
                     >
@@ -153,7 +151,7 @@ export default function Index() {
 
                     {/* LIKE BUTTON */}
                     <TouchableOpacity
-                        className="w-16 h-16 bg-white rounded-full items-center justify-center shadow-lg border-4 border-green-500"
+                        className="w-16 h-16 bg-white rounded-full items-center justify-center shadow-lg border-4 border-green-400"
                         activeOpacity={0.7}
                         onPress={handleLike}
                     >
