@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Text, View, Image, TouchableOpacity, ActivityIndicator } from "react-native";
+import { Text, View, TouchableOpacity, ActivityIndicator } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { icons } from "@/constants/icons";
+import { Ionicons } from '@expo/vector-icons';
 import ImageCarousel from "@/components/ImageCarousel";
+import DogDetailModal from "@/components/DogDetailModal";
 import allDogs from "@/assets/data/dogs.json";
 import { Dog } from "@/types/dog";
 import { getUnseenDogs, addLikedDog, addDislikedDog } from "@/utils/dogStorage";
-import DogDetailModal from "@/components/DogDetailModal";
 
 export default function Index() {
     const [unseenDogs, setUnseenDogs] = useState<Dog[]>([]);
@@ -14,7 +14,6 @@ export default function Index() {
     const [loading, setLoading] = useState(true);
     const [modalVisible, setModalVisible] = useState(false);
 
-    // Load unseen dogs on mount
     useEffect(() => {
         const loadDogs = async () => {
             const dogsWithImages = (allDogs as Dog[]).filter(dog =>
@@ -32,20 +31,15 @@ export default function Index() {
     const handleLike = async () => {
         const currentDog = unseenDogs[currentIndex];
         await addLikedDog(currentDog.name);
-        moveToNext();
+        setCurrentIndex(prevIndex => prevIndex + 1);
     };
 
     const handleDislike = async () => {
         const currentDog = unseenDogs[currentIndex];
         await addDislikedDog(currentDog.name);
-        moveToNext();
-    };
-
-    const moveToNext = () => {
         setCurrentIndex(prevIndex => prevIndex + 1);
     };
 
-    // Loading state
     if (loading) {
         return (
             <SafeAreaView className="flex-1 bg-white items-center justify-center">
@@ -55,7 +49,6 @@ export default function Index() {
         );
     }
 
-    // No more dogs to show
     if (currentIndex >= unseenDogs.length) {
         return (
             <SafeAreaView className="flex-1 bg-white items-center justify-center">
@@ -71,49 +64,36 @@ export default function Index() {
 
     const currentDog = unseenDogs[currentIndex];
     const images = Array.isArray(currentDog.images) ? currentDog.images : [];
-
-    // Get next 2 dogs for pre-rendering
     const nextDogs = unseenDogs.slice(currentIndex + 1, currentIndex + 3);
 
     return (
         <SafeAreaView className="flex-1 bg-white">
-            {/* FIXED HEADER */}
+            {/* HEADER */}
             <View className="items-center">
                 <Text className="font-bold text-blue-400 text-2xl">fido</Text>
             </View>
 
-            {/* FLEXIBLE MIDDLE - Takes remaining space */}
+            {/* MIDDLE */}
             <View className="flex-1 items-center justify-center px-4">
-                {/* Current dog carousel - visible */}
-                <ImageCarousel
-                    key={currentDog.name}
-                    images={images}
-                />
+                <ImageCarousel key={currentDog.name} images={images} />
 
                 {/* Pre-render next dogs off-screen */}
                 <View style={{ position: 'absolute', left: -10000, top: 0 }}>
                     {nextDogs.map((dog) => {
                         const dogImages = Array.isArray(dog.images) ? dog.images : [];
-                        return (
-                            <ImageCarousel
-                                key={dog.name}
-                                images={dogImages}
-                            />
-                        );
+                        return <ImageCarousel key={dog.name} images={dogImages} />;
                     })}
                 </View>
             </View>
 
-            {/* FIXED FOOTER */}
+            {/* FOOTER */}
             <View className="px-6">
-                {/* Dog Name */}
                 <View className="mb-1">
                     <Text className="font-bold text-gray-600 text-2xl">
                         {currentDog.name}
                     </Text>
                 </View>
 
-                {/* Temperament and View More */}
                 <View className="flex-row justify-between items-center mb-4">
                     {currentDog.temperament ? (
                         <Text className="text-gray-500 text-sm flex-1 mr-2">
@@ -126,7 +106,7 @@ export default function Index() {
                     <TouchableOpacity
                         className="bg-gray-100 px-3 py-1.5 rounded-full"
                         activeOpacity={0.6}
-                        onPress={() => setModalVisible(true)} // Add this
+                        onPress={() => setModalVisible(true)}
                     >
                         <Text className="text-blue-500 font-semibold text-sm">
                             View more
@@ -135,34 +115,25 @@ export default function Index() {
                 </View>
 
                 {/* Buttons */}
-                <View className="flex-row items-center justify-center gap-8">
-                    {/* DISLIKE BUTTON */}
+                <View className="flex-row items-center justify-center gap-28">
                     <TouchableOpacity
-                        className="w-16 h-16 bg-white rounded-full items-center justify-center shadow-lg border-4 border-red-400"
+                        className="w-16 h-16 bg-red-400 rounded-full items-center justify-center shadow"
                         activeOpacity={0.7}
                         onPress={handleDislike}
                     >
-                        <Image
-                            source={icons.dislike}
-                            className="w-16 h-16"
-                            resizeMode="contain"
-                        />
+                        <Ionicons name="close" size={36} color="white" />
                     </TouchableOpacity>
 
-                    {/* LIKE BUTTON */}
                     <TouchableOpacity
-                        className="w-16 h-16 bg-white rounded-full items-center justify-center shadow-lg border-4 border-green-400"
+                        className="w-16 h-16 bg-green-400 rounded-full items-center justify-center shadow"
                         activeOpacity={0.7}
                         onPress={handleLike}
                     >
-                        <Image
-                            source={icons.like}
-                            className="w-16 h-16"
-                            resizeMode="contain"
-                        />
+                        <Ionicons name="heart" size={32} color="white" />
                     </TouchableOpacity>
                 </View>
             </View>
+
             <DogDetailModal
                 visible={modalVisible}
                 dog={currentDog}
