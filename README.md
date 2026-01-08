@@ -22,7 +22,6 @@ Todo:
 * Create what is to be seen when the stack is empty of dogs
 * Create some random function that gives you the next dog, so they don't come alphabetically
 * add disclaimer, info might be wrong, do proper research online before commiting to purchasing
-* Fix navbar, and decide for final design on it
 * x-button in dog info dog info to make it easier to return
 
 
