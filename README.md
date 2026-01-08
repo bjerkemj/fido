@@ -24,7 +24,6 @@ Todo:
 * make better use of puppy photos
 * 23 dogs are missing photos, fetch photos for them
 * some dog photos are incorrect, wrongly cropped. go through manually and fix
-* icons (heart, measure, weight) are unused
 * View more page could have more details added. (chips for temperament)
 * Figure out what the temperaments mean, as well as the group and demeanor. add this to the site
 * Create what is to be seen when the stack is empty of dogs
