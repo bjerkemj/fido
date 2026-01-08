@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity, LayoutAnimation, Platform, UIManager } fr
 import { Dog } from '@/types/dog';
 import { Ionicons } from '@expo/vector-icons';
 import { useState, useMemo } from 'react';
+import { TemperamentChip } from './TemperamentChip';
 
 // Enable LayoutAnimation for Android
 if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
@@ -41,17 +42,25 @@ export const DogDetailContent = ({ dog, showHeader = true }: DogDetailContentPro
 
     return (
         <>
-            {/* Header */}
+            {/* Header - Now only contains the Name */}
             {showHeader && (
                 <View style={{ marginBottom: 16 }}>
-                    <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#111827', marginBottom: 8 }}>
+                    <Text style={{
+                        fontSize: 32,
+                        fontWeight: 'bold',
+                        color: '#111827',
+                    }}>
                         {dog.name}
                     </Text>
-                    {dog.temperament && (
-                        <Text style={{ fontSize: 16, color: '#3B82F6', fontWeight: '500', fontStyle: 'italic' }}>
-                            {dog.temperament}
-                        </Text>
-                    )}
+                </View>
+            )}
+
+            {/* Temperament - Moved here to be always visible */}
+            {dog.temperament && (
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 16 }}>
+                    {dog.temperament.split(',').map((trait) => (
+                        <TemperamentChip key={trait.trim()} trait={trait.trim()} />
+                    ))}
                 </View>
             )}
 
