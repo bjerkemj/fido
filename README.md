@@ -21,8 +21,6 @@ Todo:
 * remember to give credit to photographers and website (unsplash)
 * affiliate links
 * Check all photos, and update where needed
-* description seems to miss space between 2nd and 3rd sentence
-* add view more to description
 * make better use of puppy photos
 * 23 dogs are missing photos, fetch photos for them
 * some dog photos are incorrect, wrongly cropped. go through manually and fix

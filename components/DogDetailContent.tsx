@@ -1,88 +1,100 @@
-import { View, Text, ScrollView } from 'react-native';
+import { View, Text, TouchableOpacity, LayoutAnimation, Platform, UIManager } from 'react-native';
 import { Dog } from '@/types/dog';
 import { Ionicons } from '@expo/vector-icons';
+import { useState, useMemo } from 'react';
+
+// Enable LayoutAnimation for Android
+if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
+    UIManager.setLayoutAnimationEnabledExperimental(true);
+}
 
 interface DogDetailContentProps {
     dog: Dog;
-    showHeader?: boolean; // Optional: some contexts might handle header differently
+    showHeader?: boolean;
 }
 
 export const DogDetailContent = ({ dog, showHeader = true }: DogDetailContentProps) => {
+    const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
+
+    const fullDescription = dog.description || '';
+
+    // Memoize the truncation logic for performance
+    const { truncatedDescription, shouldTruncate } = useMemo(() => {
+        // Match sentences ending in punctuation
+        const sentences = fullDescription.match(/[^.!?]+[.!?]+/g) || [];
+
+        if (sentences.length <= 3) {
+            return { truncatedDescription: fullDescription, shouldTruncate: false };
+        }
+
+        return {
+            truncatedDescription: sentences.slice(0, 3).join('').trim(),
+            shouldTruncate: true
+        };
+    }, [fullDescription]);
+
+    const toggleExpand = () => {
+        // Animates the height change of the container
+        LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+        setIsDescriptionExpanded(!isDescriptionExpanded);
+    };
+
     return (
         <>
             {/* Header */}
             {showHeader && (
                 <View style={{ marginBottom: 16 }}>
-                    <Text style={{
-                        fontSize: 32,
-                        fontWeight: 'bold',
-                        color: '#111827',
-                        marginBottom: 8,
-                    }}>
+                    <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#111827', marginBottom: 8 }}>
                         {dog.name}
                     </Text>
                     {dog.temperament && (
-                        <Text style={{
-                            fontSize: 16,
-                            color: '#3B82F6',
-                            fontWeight: '500',
-                            fontStyle: 'italic',
-                        }}>
+                        <Text style={{ fontSize: 16, color: '#3B82F6', fontWeight: '500', fontStyle: 'italic' }}>
                             {dog.temperament}
                         </Text>
                     )}
                 </View>
             )}
 
-            {/* Key Stats - Horizontal Grid */}
-            <View style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                marginBottom: 32,
-                marginHorizontal: -4,
-            }}>
+            {/* Key Stats */}
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 32, marginHorizontal: -4 }}>
                 <StatBox label="Weight" value={`${Math.round(dog.min_weight)}-${Math.round(dog.max_weight)}kg`} />
                 <StatBox label="Height" value={`${Math.round(dog.min_height)}-${Math.round(dog.max_height)}cm`} />
                 <StatBox label="Life" value={`${dog.min_expectancy}-${dog.max_expectancy}y`} />
             </View>
 
             {/* About Section */}
-            {dog.description && (
+            {fullDescription.length > 0 && (
                 <View style={{ marginBottom: 32 }}>
-                    <Text style={{
-                        fontSize: 18,
-                        fontWeight: 'bold',
-                        color: '#111827',
-                        marginBottom: 8,
-                    }}>
+                    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#111827', marginBottom: 8 }}>
                         About
                     </Text>
-                    <Text style={{
-                        fontSize: 15,
-                        lineHeight: 22,
-                        color: '#4B5563',
-                    }}>
-                        {dog.description}
+
+                    <Text style={{ fontSize: 15, lineHeight: 22, color: '#4B5563' }}>
+                        {isDescriptionExpanded ? fullDescription : truncatedDescription}
+                        {!isDescriptionExpanded && shouldTruncate && ' '}
+
+                        {/* Nested Text acts as an inline button */}
+                        {shouldTruncate && (
+                            <Text
+                                onPress={toggleExpand}
+                                style={{
+                                    color: '#3B82F6',
+                                    fontWeight: '600',
+                                    fontSize: 14,
+                                }}
+                            >
+                                {isDescriptionExpanded ? ' Show less' : 'Show more'}
+                            </Text>
+                        )}
                     </Text>
                 </View>
             )}
 
             {/* Traits */}
-            <Text style={{
-                fontSize: 18,
-                fontWeight: 'bold',
-                color: '#111827',
-                marginBottom: 16,
-            }}>
+            <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#111827', marginBottom: 16 }}>
                 Traits
             </Text>
-            <View style={{
-                backgroundColor: '#F9FAFB',
-                borderRadius: 24,
-                padding: 8,
-                borderWidth: 1,
-                borderColor: '#F3F4F6',
-            }}>
+            <View style={{ backgroundColor: '#F9FAFB', borderRadius: 24, padding: 8, borderWidth: 1, borderColor: '#F3F4F6' }}>
                 <TraitRow icon="flash-outline" label="Energy" value={dog.energy_level_category} />
                 <TraitRow icon="school-outline" label="Training" value={dog.trainability_category} />
                 <TraitRow icon="cut-outline" label="Grooming" value={dog.grooming_frequency_category} />
