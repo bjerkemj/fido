@@ -23,6 +23,7 @@ Todo:
 * Create some random function that gives you the next dog, so they don't come alphabetically
 * add disclaimer, info might be wrong, do proper research online before commiting to purchasing
 * x-button in dog info dog info to make it easier to return
+* like logic can bug out due to fast likes. ask gpt what can go wrong and how to fix
 
 
 Photos:
