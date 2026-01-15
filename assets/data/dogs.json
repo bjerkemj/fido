@@ -6826,7 +6826,33 @@
         "trainability_category": "Agreeable",
         "demeanor_value": "0.6",
         "demeanor_category": "Alert/Responsive",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Grizzle_and_tan_lakeland_terrier.jpg",
+                "author": "Inkforest",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=8551573857&secret=818e9a5440&size=c&source=photoPageEngagement",
+                "author": "Musespeak",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2015/08/26/15/45/lakeland-terrier-908693_1280.jpg",
+                "author": "eventsfb",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Hughie_-_Lakeland_Terrier.jpg/960px-Hughie_-_Lakeland_Terrier.jpg?20140212192628",
+                "author": "Hoppyh",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2015/08/26/15/42/lakeland-terrier-908690_1280.jpg",
+                "author": "eventsfb",
+                "source": "Pixabay"
+            }
+        ]
     },
     {
         "name": "Lancashire Heeler",
@@ -6850,7 +6876,23 @@
         "trainability_category": "Easy Training",
         "demeanor_value": "0.8",
         "demeanor_category": "Friendly",
-        "images": []
+        "images": [
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=15962931927&secret=62f0cd6bc5&size=l&source=photoPageEngagement",
+                "author": "Rob Powell Photos",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2022/11/23/15/29/lancashire-heeler-7612339_1280.jpg",
+                "author": "hansbenn",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=24208350271&secret=608f93b3dd&size=c&source=photoPageEngagement",
+                "author": "Svenska Mässan",
+                "source": "Flickr"
+            }
+        ]
     },
     {
         "name": "Lapponian Herder",
@@ -6874,7 +6916,18 @@
         "trainability_category": "Eager to Please",
         "demeanor_value": "0.4",
         "demeanor_category": "Reserved with Strangers",
-        "images": []
+        "images": [
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=36031058965&secret=53e2cae78b&size=c&source=photoPageEngagement",
+                "author": "wozniaksue1",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=41016885&secret=619cf44487&size=c&source=photoPageEngagement",
+                "author": "wozniaksue1",
+                "source": "Flickr"
+            }
+        ]
     },
     {
         "name": "Leonberger",
@@ -6900,6 +6953,11 @@
         "demeanor_category": "Friendly",
         "images": [
             {
+                "url": "https://cdn.pixabay.com/photo/2017/08/28/23/08/dog-2691631_1280.jpg",
+                "author": "sesheta",
+                "source": "Pixabay"
+            },
+            {
                 "url": "https://images.unsplash.com/photo-1611505662537-212c4747bf88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwxfHxMZW9uYmVyZ2VyfGVufDB8fHx8MTc2NzA4NjY0NHww&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Stephanie Lucero",
                 "source": "Unsplash"
@@ -6908,6 +6966,11 @@
                 "url": "https://images.unsplash.com/photo-1617181815299-b24fd319f6b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwyfHxMZW9uYmVyZ2VyfGVufDB8fHx8MTc2NzA4NjY0NHww&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Reba Spike",
                 "source": "Unsplash"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2017/04/21/20/14/leonberger-2249821_1280.jpg",
+                "author": "oses",
+                "source": "Pixabay"
             }
         ]
     },
@@ -6945,6 +7008,11 @@
                 "source": "Unsplash"
             },
             {
+                "url": "https://cdn.pixabay.com/photo/2016/01/08/06/40/noddy-1127220_1280.jpg",
+                "author": "kshitijprakash",
+                "source": "Pixabay"
+            },
+            {
                 "url": "https://images.unsplash.com/photo-1606409696433-30abdea0b0ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw0fHxMaGFzYSUyMEFwc298ZW58MHx8fHwxNzY3MDg2NjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Silvana Carlos",
                 "source": "Unsplash"
@@ -6978,7 +7046,23 @@
         "trainability_category": "Agreeable",
         "demeanor_value": "1.0",
         "demeanor_category": "Outgoing",
-        "images": []
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/35219126/pexels-photo-35219126.jpeg",
+                "author": "Lorna Pauli",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2016/04/15/09/08/dog-1330537_1280.jpg",
+                "author": "chili71",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=54060111397&secret=2eb2903182&size=c&source=photoPageEngagement",
+                "author": "gailhampshire",
+                "source": "Flickr"
+            }
+        ]
     },
     {
         "name": "Maltese",
@@ -7009,9 +7093,9 @@
                 "source": "Unsplash"
             },
             {
-                "url": "https://images.unsplash.com/photo-1634680687995-159e560f1de2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwyfHxNYWx0ZXNlfGVufDB8fHx8MTc2NzA4NjY1MHww&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Tali Despins",
-                "source": "Unsplash"
+                "url": "https://cdn.pixabay.com/photo/2022/03/09/20/13/animal-7058638_1280.jpg",
+                "author": "artellliii72",
+                "source": "Pixabay"
             },
             {
                 "url": "https://images.unsplash.com/photo-1661340529386-53d959043b03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwzfHxNYWx0ZXNlfGVufDB8fHx8MTc2NzA4NjY1MHww&ixlib=rb-4.1.0&q=80&w=1080",
@@ -7052,7 +7136,18 @@
         "trainability_category": "Easy Training",
         "demeanor_value": "0.6",
         "demeanor_category": "Alert/Responsive",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Manchesterterrier.jpg",
+                "author": "",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Kayfront.jpg/366px-Kayfront.jpg",
+                "author": "",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Manchester Terrier (Toy)",
@@ -7076,7 +7171,13 @@
         "trainability_category": "Easy Training",
         "demeanor_value": "0.6",
         "demeanor_category": "Alert/Responsive",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Toy-manchester-terrier-weave.png?20060720120311",
+                "author": "Coneslayer",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Mastiff",
@@ -7100,7 +7201,23 @@
         "trainability_category": "Agreeable",
         "demeanor_value": "0.6",
         "demeanor_category": "Alert/Responsive",
-        "images": []
+        "images": [
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=4668201698&secret=17cc370e9e&size=c&source=photoPageEngagement",
+                "author": "The Hendersons Paradox",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=12211695005&secret=80e94e7b96&size=c&source=photoPageEngagement",
+                "author": "New Deal Lions Sports and then some",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=4212062497&secret=7874426635&size=c&source=photoPageEngagement",
+                "author": "CowCopTim",
+                "source": "Flickr"
+            }
+        ]
     },
     {
         "name": "Miniature American Shepherd",
@@ -7124,7 +7241,23 @@
         "trainability_category": "Eager to Please",
         "demeanor_value": "0.8",
         "demeanor_category": "Friendly",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Blue_Merle_Miniature_American_Shepherd_in_Grass.jpg?20151226172100",
+                "author": "Lextergrace",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=53475924085&secret=c04d1edd90&size=c&source=photoPageEngagement",
+                "author": "Suzanne Schroeter",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2025/03/18/17/08/dog-9478504_1280.jpg",
+                "author": "salofoto",
+                "source": "Pixabay"
+            }
+        ]
     },
     {
         "name": "Miniature Bull Terrier",
@@ -7148,7 +7281,33 @@
         "trainability_category": "Independent",
         "demeanor_value": "0.6",
         "demeanor_category": "Alert/Responsive",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Mini_Bull_Terrier.jpg",
+                "author": "Molenaar",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=52284199300&secret=43515af478&size=c&source=photoPageEngagement",
+                "author": "Just chaos",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2019/10/31/18/27/dog-4592527_1280.jpg",
+                "author": "Seaq68",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2021/09/27/13/37/bull-terrier-6660852_1280.jpg",
+                "author": "bestline",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2013/05/21/22/32/bull-terrier-112515_1280.jpg",
+                "author": "commitment_coaching",
+                "source": "Pixabay"
+            }
+        ]
     },
     {
         "name": "Miniature Pinscher",
@@ -7174,9 +7333,19 @@
         "demeanor_category": "Alert/Responsive",
         "images": [
             {
+                "url": "https://cdn.pixabay.com/photo/2020/11/21/08/34/miniature-pinscher-5763412_1280.jpg",
+                "author": "maxxxiss",
+                "source": "Pixabay"
+            },
+            {
                 "url": "https://images.unsplash.com/photo-1546442586-ce2865175b4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwxfHxNaW5pYXR1cmUlMjBQaW5zY2hlcnxlbnwwfHx8fDE3NjcwODY2NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Claudio Schwarz",
                 "source": "Unsplash"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2018/07/04/15/39/miniature-pinscher-3516333_1280.jpg",
+                "author": "Dorena",
+                "source": "Pixabay"
             },
             {
                 "url": "https://images.unsplash.com/photo-1735994514191-6f6bd8952b18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw1fHxNaW5pYXR1cmUlMjBQaW5zY2hlcnxlbnwwfHx8fDE3NjcwODY2NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -7209,9 +7378,9 @@
         "demeanor_category": "Alert/Responsive",
         "images": [
             {
-                "url": "https://images.unsplash.com/photo-1580467277788-c6e040296602?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwxfHxNaW5pYXR1cmUlMjBTY2huYXV6ZXJ8ZW58MHx8fHwxNzY3MDg2NjY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Sebastian Coman Travel",
-                "source": "Unsplash"
+                "url": "https://cdn.pixabay.com/photo/2016/12/21/17/46/miniature-schnauzer-1923452_1280.jpg",
+                "author": "IsabellWolf",
+                "source": "Pixabay"
             },
             {
                 "url": "https://images.unsplash.com/photo-1579698374511-6017bd6db7f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwyfHxNaW5pYXR1cmUlMjBTY2huYXV6ZXJ8ZW58MHx8fHwxNzY3MDg2NjY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -7219,9 +7388,9 @@
                 "source": "Unsplash"
             },
             {
-                "url": "https://images.unsplash.com/photo-1577272434860-aff625a47ee0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwzfHxNaW5pYXR1cmUlMjBTY2huYXV6ZXJ8ZW58MHx8fHwxNzY3MDg2NjY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Sebastian Coman Travel",
-                "source": "Unsplash"
+                "url": "https://cdn.pixabay.com/photo/2016/03/05/17/54/schnauzer-1238155_1280.jpg",
+                "author": "joangonzalez",
+                "source": "Pixabay"
             },
             {
                 "url": "https://images.unsplash.com/photo-1663770427865-8bd61b1f0607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw0fHxNaW5pYXR1cmUlMjBTY2huYXV6ZXJ8ZW58MHx8fHwxNzY3MDg2NjY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -7229,9 +7398,9 @@
                 "source": "Unsplash"
             },
             {
-                "url": "https://images.unsplash.com/photo-1663770329894-38ddf2205c28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw1fHxNaW5pYXR1cmUlMjBTY2huYXV6ZXJ8ZW58MHx8fHwxNzY3MDg2NjY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Irene",
-                "source": "Unsplash"
+                "url": "https://cdn.pixabay.com/photo/2014/02/27/16/08/schnauzer-275936_1280.jpg",
+                "author": "No-longer-here",
+                "source": "Pixabay"
             }
         ]
     },
@@ -7259,9 +7428,14 @@
         "demeanor_category": "Reserved with Strangers",
         "images": [
             {
-                "url": "https://images.unsplash.com/photo-1604897147070-fa0b241ed8e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwxfHxNb3VudGFpbiUyMEN1cnxlbnwwfHx8fDE3NjcwODY2Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Michael Loftus",
-                "source": "Unsplash"
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Mtncur.png",
+                "author": "ThoHug",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2016/11/21/14/44/black-1845773_1280.jpg",
+                "author": "Pexels",
+                "source": "Pixabay"
             }
         ]
     },
@@ -7287,7 +7461,18 @@
         "trainability_category": "Eager to Please",
         "demeanor_value": "0.4",
         "demeanor_category": "Reserved with Strangers",
-        "images": []
+        "images": [
+            {
+                "url": "https://cdn.pixabay.com/photo/2022/02/25/13/05/mudi-7034135_1280.jpg",
+                "author": "Grey85",
+                "source": "Unsplash"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Mudi_fawn.JPG?20070322222943",
+                "author": "Lily15",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Neapolitan Mastiff",
@@ -7311,7 +7496,18 @@
         "trainability_category": "May be Stubborn",
         "demeanor_value": "0.2",
         "demeanor_category": "Aloof/Wary",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Mastino_sylwetka.jpg",
+                "author": "Ewa Ziemska",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=15303218502&secret=c3af9ff91c&size=c&source=photoPageEngagement",
+                "author": "JSF539",
+                "source": "Flickr"
+            }
+        ]
     },
     {
         "name": "Nederlandse Kooikerhondje",
@@ -7335,7 +7531,33 @@
         "trainability_category": "Eager to Please",
         "demeanor_value": "0.4",
         "demeanor_category": "Reserved with Strangers",
-        "images": []
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/9604621/pexels-photo-9604621.jpeg",
+                "author": "Maurice DT",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://images.pexels.com/photos/26587409/pexels-photo-26587409.jpeg",
+                "author": "Ethan Reinhardt",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2020/01/05/21/02/dog-4744089_1280.jpg",
+                "author": "SHGAdipositas",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2018/12/04/09/18/dog-3855173_1280.jpg",
+                "author": "warpmike",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2015/05/05/10/35/puppy-753588_1280.jpg",
+                "author": "warpmike",
+                "source": "Pixabay"
+            }
+        ]
     },
     {
         "name": "Newfoundland",
@@ -7359,7 +7581,28 @@
         "trainability_category": "Easy Training",
         "demeanor_value": "0.8",
         "demeanor_category": "Friendly",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Newfoundland_dog_Smoky.jpg/500px-Newfoundland_dog_Smoky.jpg",
+                "author": "Dan Morgan",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2017/02/18/22/05/newfoundland-2078383_1280.jpg",
+                "author": "Unknown",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Female_Newfs.jpg",
+                "author": "Kornum",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Dog3.jpg?20141219072111",
+                "author": "Unknown",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Norfolk Terrier",
@@ -7383,7 +7626,28 @@
         "trainability_category": "Agreeable",
         "demeanor_value": "0.8",
         "demeanor_category": "Friendly",
-        "images": []
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/4319939/pexels-photo-4319939.jpeg",
+                "author": "Marina Utrabo",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://images.pexels.com/photos/13009010/pexels-photo-13009010.jpeg",
+                "author": "Studio Saiz",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Charmonty_Norfolkterrier.jpg",
+                "author": "Robin Wellmann",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2018/07/12/12/28/dog-3533300_1280.jpg",
+                "author": "No-longer-here",
+                "source": "Pixabay"
+            }
+        ]
     },
     {
         "name": "Norrbottenspets",
@@ -7407,7 +7671,18 @@
         "trainability_category": "",
         "demeanor_value": "",
         "demeanor_category": "",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Norrbottenspets_Karina_2008.jpg/2560px-Norrbottenspets_Karina_2008.jpg",
+                "author": "Manjusha Kennels",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Nordic_Spitz.jpg",
+                "author": "Kaisa Kotajärvi",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Norwegian Buhund",
@@ -7431,7 +7706,28 @@
         "trainability_category": "Easy Training",
         "demeanor_value": "0.8",
         "demeanor_category": "Friendly",
-        "images": []
+        "images": [
+            {
+                "url": "https://cdn.pixabay.com/photo/2020/06/05/14/36/buhund-5263396_1280.jpg",
+                "author": "MustapääU",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=4058967854&secret=932d1f8802&size=c&source=photoPageEngagement",
+                "author": "phunkstarr",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2020/06/09/17/02/buhund-5279207_1280.jpg",
+                "author": "MustapääU",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=5951890258&secret=78cc186262&size=c&source=photoPageEngagement",
+                "author": "phunkstarr",
+                "source": "Flickr"
+            }
+        ]
     },
     {
         "name": "Norwegian Elkhound",
@@ -7462,6 +7758,11 @@
                 "source": "Unsplash"
             },
             {
+                "url": "https://images.pexels.com/photos/20462535/pexels-photo-20462535.jpeg",
+                "author": "Aref Sarkhosh",
+                "source": "Pexels"
+            },
+            {
                 "url": "https://images.unsplash.com/photo-1679690431237-acaf2387df53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwyfHxOb3J3ZWdpYW4lMjBFbGtob3VuZHxlbnwwfHx8fDE3NjcxNjQ5NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Christopher Ryan",
                 "source": "Unsplash"
@@ -7470,6 +7771,11 @@
                 "url": "https://images.unsplash.com/photo-1667376271534-aa08e37b9495?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw0fHxOb3J3ZWdpYW4lMjBFbGtob3VuZHxlbnwwfHx8fDE3NjcxNjQ5NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Fredrik Solli Wandem",
                 "source": "Unsplash"
+            },
+            {
+                "url": "https://images.pexels.com/photos/11938539/pexels-photo-11938539.jpeg",
+                "author": "William Sutherland",
+                "source": "Pexels"
             }
         ]
     },
@@ -7495,7 +7801,18 @@
         "trainability_category": "Agreeable",
         "demeanor_value": "0.4",
         "demeanor_category": "Reserved with Strangers",
-        "images": []
+        "images": [
+            {
+                "url": "https://cdn.pixabay.com/photo/2022/03/18/06/39/animal-7075982_1280.jpg",
+                "author": "AlexKantsur",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=8107931986&secret=d3abcff01d&size=c&source=photoPageEngagement",
+                "author": "Petful.com",
+                "source": "Flickr"
+            }
+        ]
     },
     {
         "name": "Norwich Terrier",
@@ -7521,6 +7838,11 @@
         "demeanor_category": "Friendly",
         "images": [
             {
+                "url": "https://images.pexels.com/photos/7210718/pexels-photo-7210718.jpeg",
+                "author": "Blue Bird",
+                "source": "Pexels"
+            },
+            {
                 "url": "https://images.unsplash.com/photo-1628745127129-5a1e1c028bad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwxfHxOb3J3aWNoJTIwVGVycmllcnxlbnwwfHx8fDE3NjcxNjQ5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Andrei Trishkin",
                 "source": "Unsplash"
@@ -7534,6 +7856,11 @@
                 "url": "https://images.unsplash.com/photo-1714132412082-8a4c0d9bdc1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw1fHxOb3J3aWNoJTIwVGVycmllcnxlbnwwfHx8fDE3NjcxNjQ5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Aleksandr Zaitsev",
                 "source": "Unsplash"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/A_Norwich_Terrier.jpg?20140228154925",
+                "author": "Jean",
+                "source": "Wikipedia"
             }
         ]
     },
@@ -7626,9 +7953,14 @@
                 "source": "Unsplash"
             },
             {
-                "url": "https://images.unsplash.com/photo-1596972561180-ff5770ea2ca5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw1fHxPbGQlMjBFbmdsaXNoJTIwU2hlZXBkb2d8ZW58MHx8fHwxNzY3MTY0OTUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "willy wong",
-                "source": "Unsplash"
+                "url": "https://images.pexels.com/photos/29821960/pexels-photo-29821960.jpeg",
+                "author": "Filip Kvasnak",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2012/12/17/15/22/sheepdog-70334_1280.jpg",
+                "author": "PublicDomainPictures",
+                "source": "Pixabay"
             }
         ]
     },
@@ -7654,7 +7986,23 @@
         "trainability_category": "May be Stubborn",
         "demeanor_value": "0.6",
         "demeanor_category": "Alert/Responsive",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Two_otterhounds.jpg",
+                "author": "Unknown",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=4393061127&secret=617803107c&size=c&source=photoPageEngagement",
+                "author": "Llima",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=54992053893&secret=906b8224ef&size=c&source=photoPageEngagement",
+                "author": "eebAMDG",
+                "source": "Flickr"
+            }
+        ]
     },
     {
         "name": "Papillon",
@@ -7678,7 +8026,28 @@
         "trainability_category": "Eager to Please",
         "demeanor_value": "1.0",
         "demeanor_category": "Outgoing",
-        "images": []
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/7210605/pexels-photo-7210605.jpeg",
+                "author": "Blue Bird",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2019/11/20/20/13/papillon-4641046_1280.jpg",
+                "author": "Jo_nn_a",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2020/05/03/09/50/dog-5124475_1280.jpg",
+                "author": "SaschaFritz",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=7108572753&secret=3dd9610630&size=c&source=photoPageEngagement",
+                "author": "andreaarden",
+                "source": "Flickr"
+            }
+        ]
     },
     {
         "name": "Parson Russell Terrier",
@@ -7707,6 +8076,26 @@
                 "url": "https://images.unsplash.com/photo-1597586755950-3e029f817855?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwxfHxQYXJzb24lMjBSdXNzZWxsJTIwVGVycmllcnxlbnwwfHx8fDE3NjcxNjQ5NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Lena Balk",
                 "source": "Unsplash"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2020/05/13/16/10/parson-russell-terrier-5168050_1280.jpg",
+                "author": "Jeannette1980",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2020/07/23/17/57/dog-5431953_1280.jpg",
+                "author": "susanne906",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://images.pexels.com/photos/24859825/pexels-photo-24859825.jpeg",
+                "author": "Mladen Šćekić",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=8157757068&secret=545b7e9589&size=c&source=photoPageEngagement",
+                "author": "RichardJames1990",
+                "source": "Flickr"
             }
         ]
     },
@@ -7739,9 +8128,24 @@
                 "source": "Unsplash"
             },
             {
-                "url": "https://images.unsplash.com/photo-1703733569194-c055c48fc374?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwyfHxQZWtpbmdlc2V8ZW58MHx8fHwxNzY3MTY0OTYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Judy Beth Morris",
-                "source": "Unsplash"
+                "url": "https://images.pexels.com/photos/12630552/pexels-photo-12630552.jpeg",
+                "author": "Daniil Kondrashin",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://images.pexels.com/photos/35531848/pexels-photo-35531848.jpeg",
+                "author": "Roman Biernacki",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2017/05/22/15/14/pekingese-2334385_1280.jpg",
+                "author": "kissu",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2018/06/03/19/50/nature-3451386_1280.jpg",
+                "author": "dadeltjie",
+                "source": "Pixabay"
             }
         ]
     },
@@ -7769,19 +8173,19 @@
         "demeanor_category": "Outgoing",
         "images": [
             {
+                "url": "https://images.pexels.com/photos/58997/pexels-photo-58997.jpeg",
+                "author": "muhannad alatawi",
+                "source": "Pexels"
+            },
+            {
                 "url": "https://images.unsplash.com/photo-1653760188729-894d6518581e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwxfHxQZW1icm9rZSUyMFdlbHNoJTIwQ29yZ2l8ZW58MHx8fHwxNzY3MTY0OTYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Regina Art",
                 "source": "Unsplash"
             },
             {
-                "url": "https://images.unsplash.com/photo-1713575029300-cdb14999ff65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwyfHxQZW1icm9rZSUyMFdlbHNoJTIwQ29yZ2l8ZW58MHx8fHwxNzY3MTY0OTYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Joycelyn Hung",
-                "source": "Unsplash"
-            },
-            {
-                "url": "https://images.unsplash.com/photo-1709377350603-266551169d21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwzfHxQZW1icm9rZSUyMFdlbHNoJTIwQ29yZ2l8ZW58MHx8fHwxNzY3MTY0OTYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Chloe Short",
-                "source": "Unsplash"
+                "url": "https://images.pexels.com/photos/35636417/pexels-photo-35636417.jpeg",
+                "author": "Jasper Kortmann",
+                "source": "Pexels"
             },
             {
                 "url": "https://images.unsplash.com/photo-1721592737201-04bbe013df72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw0fHxQZW1icm9rZSUyMFdlbHNoJTIwQ29yZ2l8ZW58MHx8fHwxNzY3MTY0OTYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -7817,7 +8221,28 @@
         "trainability_category": "",
         "demeanor_value": "",
         "demeanor_category": "",
-        "images": []
+        "images": [
+            {
+                "url": "https://cdn.pixabay.com/photo/2015/05/02/23/31/dogo-canario-750561_1280.jpg",
+                "author": "Unknown",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2022/12/16/22/11/dog-7660589_1280.jpg",
+                "author": "Miniu",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Presacanarionaturalears.jpg",
+                "author": "Smok Bazyli",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2022/12/12/17/09/dog-7651458_1280.jpg",
+                "author": "Miniu",
+                "source": "Pixabay"
+            }
+        ]
     },
     {
         "name": "Peruvian Inca Orchid",
@@ -7841,7 +8266,28 @@
         "trainability_category": "Agreeable",
         "demeanor_value": "0.4",
         "demeanor_category": "Reserved with Strangers",
-        "images": []
+        "images": [
+            {
+                "url": "https://cdn.pixabay.com/photo/2021/12/17/19/17/dog-6877298_1280.jpg",
+                "author": "alektas",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=15113308327&secret=75c5117340&size=c&source=photoPageEngagement",
+                "author": "ancientartpodcast.org",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://images.pexels.com/photos/35507984/pexels-photo-35507984.jpeg",
+                "author": "Erwin Bosman",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=105128553&secret=e9ad5b93dc&size=c&source=photoPageEngagement",
+                "author": "quinet",
+                "source": "Flickr"
+            }
+        ]
     },
     {
         "name": "Petit Basset Griffon Vendéen",
@@ -7865,7 +8311,23 @@
         "trainability_category": "Independent",
         "demeanor_value": "0.8",
         "demeanor_category": "Friendly",
-        "images": []
+        "images": [
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=5280726767&secret=c5a7444377&size=c&source=photoPageEngagement",
+                "author": "Nathan150",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=14008437412&secret=b0f8f6c0b4&size=c&source=photoPageEngagement",
+                "author": "Elliott Plack",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=13910439724&secret=d8d567cbe7&size=c&source=photoPageEngagement",
+                "author": "Elliott Plack",
+                "source": "Flickr"
+            }
+        ]
     },
     {
         "name": "Pharaoh Hound",
@@ -7889,7 +8351,28 @@
         "trainability_category": "Independent",
         "demeanor_value": "0.4",
         "demeanor_category": "Reserved with Strangers",
-        "images": []
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/20080171/pexels-photo-20080171.jpeg",
+                "author": "Marina Riijik",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=8107951128&secret=f97d564779&size=c&source=photoPageEngagement",
+                "author": "Petful.com",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=6856607520&secret=52e5f8a2d8&size=c&source=photoPageEngagement",
+                "author": "Llima",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Klieb_tal-Fenek_hunting.jpg",
+                "author": "Jan Eduard ",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Plott Hound",
@@ -7914,6 +8397,16 @@
         "demeanor_value": "0.6",
         "demeanor_category": "Alert/Responsive",
         "images": [
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=25639672063&secret=efcc45a701&size=c&source=photoPageEngagement",
+                "author": "Gamma Man",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=26176078601&secret=7c3dbffa4d&size=c&source=photoPageEngagement",
+                "author": "Gamma Man",
+                "source": "Flickr"
+            },
             {
                 "url": "https://images.unsplash.com/photo-1663264135526-1a5ef4751a92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwxfHxQbG90dCUyMEhvdW5kfGVufDB8fHx8MTc2NzE2NDk3NXww&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Melissa Burovac",
@@ -7945,29 +8438,19 @@
         "demeanor_category": "Alert/Responsive",
         "images": [
             {
-                "url": "https://images.unsplash.com/photo-1670504717413-81ba2ae9435b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwxfHxQb2ludGVyfGVufDB8fHx8MTc2NzE2NDk3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Marie-Pier Fillion",
-                "source": "Unsplash"
+                "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/English-pointer-164115.jpg",
+                "author": "No-longer-here",
+                "source": "Pixabay"
             },
             {
-                "url": "https://images.unsplash.com/photo-1670505343033-ae36ef2854f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwyfHxQb2ludGVyfGVufDB8fHx8MTc2NzE2NDk3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Marie-Pier Fillion",
-                "source": "Unsplash"
+                "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Dogs_Quail_Hunting2.jpg",
+                "author": "The Florida Fish and Wildlife Conservation Commission",
+                "source": "Wikipedia"
             },
             {
-                "url": "https://images.unsplash.com/photo-1639654967523-3c7b3f02b6bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwzfHxQb2ludGVyfGVufDB8fHx8MTc2NzE2NDk3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Melissa Keizer",
-                "source": "Unsplash"
-            },
-            {
-                "url": "https://images.unsplash.com/photo-1670504854946-cee197d6c883?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw0fHxQb2ludGVyfGVufDB8fHx8MTc2NzE2NDk3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Marie-Pier Fillion",
-                "source": "Unsplash"
-            },
-            {
-                "url": "https://images.unsplash.com/photo-1670505496137-0cde81df1d6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw1fHxQb2ludGVyfGVufDB8fHx8MTc2NzE2NDk3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Marie-Pier Fillion",
-                "source": "Unsplash"
+                "url": "https://www.flickr.com/photo_download.gne?id=14921705738&secret=8bde1b412d&size=c&source=photoPageEngagement",
+                "author": "blumenbiene",
+                "source": "Flickr"
             }
         ]
     },
@@ -7993,7 +8476,28 @@
         "trainability_category": "May be Stubborn",
         "demeanor_value": "0.2",
         "demeanor_category": "Aloof/Wary",
-        "images": []
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/12073098/pexels-photo-12073098.jpeg",
+                "author": "John M",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=4393832562&secret=859a09c9d4&size=c&source=photoPageEngagement",
+                "author": "Llima",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Oowczarek_polski_nizinny_pl.jpg/1280px-Oowczarek_polski_nizinny_pl.jpg",
+                "author": "Pleple2000",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Polish_Lowland_Sheepdog_puppy_Bruno_by_Vetulani.JPG/2560px-Polish_Lowland_Sheepdog_puppy_Bruno_by_Vetulani.JPG",
+                "author": "Franek Vetulani",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Pomeranian",
@@ -8039,9 +8543,9 @@
                 "source": "Unsplash"
             },
             {
-                "url": "https://images.unsplash.com/photo-1690985211290-208bc862142b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw1fHxQb21lcmFuaWFufGVufDB8fHx8MTc2NzE2NDk4MHww&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "stefanus fandhy",
-                "source": "Unsplash"
+                "url": "https://images.pexels.com/photos/7683647/pexels-photo-7683647.jpeg",
+                "author": "KoolShooters ",
+                "source": "Pexels"
             }
         ]
     },
@@ -8069,19 +8573,29 @@
         "demeanor_category": "",
         "images": [
             {
-                "url": "https://images.unsplash.com/photo-1559483813-c16eedff27fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwxfHxQb29kbGUlMjAlMjhNaW5pYXR1cmUlMjl8ZW58MHx8fHwxNzY3MTY0OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Casey Chae",
-                "source": "Unsplash"
+                "url": "https://images.pexels.com/photos/14095696/pexels-photo-14095696.jpeg",
+                "author": "Valeria Boltneva",
+                "source": "Pexels"
             },
             {
-                "url": "https://images.unsplash.com/photo-1657558863280-da75356abe7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw0fHxQb29kbGUlMjAlMjhNaW5pYXR1cmUlMjl8ZW58MHx8fHwxNzY3MTY0OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Lesli Whitecotton",
+                "url": "https://images.unsplash.com/photo-1559483813-c16eedff27fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwxfHxQb29kbGUlMjAlMjhNaW5pYXR1cmUlMjl8ZW58MHx8fHwxNzY3MTY0OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+                "author": "Casey Chae",
                 "source": "Unsplash"
             },
             {
                 "url": "https://images.unsplash.com/photo-1575464658192-ac2c921a2b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw1fHxQb29kbGUlMjAlMjhNaW5pYXR1cmUlMjl8ZW58MHx8fHwxNzY3MTY0OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Tuomas Härkönen",
                 "source": "Unsplash"
+            },
+            {
+                "url": "https://images.pexels.com/photos/3299899/pexels-photo-3299899.jpeg",
+                "author": "Goochie Poochie Grooming",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://images.pexels.com/photos/8576214/pexels-photo-8576214.jpeg",
+                "author": "PNW Production",
+                "source": "Pexels"
             }
         ]
     },
@@ -8109,6 +8623,16 @@
         "demeanor_category": "Friendly",
         "images": [
             {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Full_attention_%288067543690%29.jpg/2560px-Full_attention_%288067543690%29.jpg",
+                "author": "Tim Wilson",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://images.pexels.com/photos/9958359/pexels-photo-9958359.jpeg",
+                "author": "Skyler Ewing",
+                "source": "Pexels"
+            },
+            {
                 "url": "https://images.unsplash.com/photo-1614261812340-5ee9a3ed33a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwxfHxQb29kbGUlMjAlMjhTdGFuZGFyZCUyOXxlbnwwfHx8fDE3NjcxNjQ5ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Hans Ole Benonisen",
                 "source": "Unsplash"
@@ -8119,9 +8643,9 @@
                 "source": "Unsplash"
             },
             {
-                "url": "https://images.unsplash.com/photo-1656869929507-2d06268e3b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw1fHxQb29kbGUlMjAlMjhTdGFuZGFyZCUyOXxlbnwwfHx8fDE3NjcxNjQ5ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Kanashi",
-                "source": "Unsplash"
+                "url": "https://cdn.pixabay.com/photo/2019/06/19/16/49/poodle-4285320_1280.jpg",
+                "author": "csheets4811",
+                "source": "Pixabay"
             }
         ]
     },
@@ -8154,6 +8678,11 @@
                 "source": "Unsplash"
             },
             {
+                "url": "https://cdn.pixabay.com/photo/2021/02/06/06/22/toy-poodle-5986987_1280.jpg",
+                "author": "ptksgc",
+                "source": "Pixabay"
+            },
+            {
                 "url": "https://images.unsplash.com/photo-1651273427958-bf78352e39be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwzfHxQb29kbGUlMjAlMjhUb3klMjl8ZW58MHx8fHwxNzY3MTY0OTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Ramiro Pianarosa",
                 "source": "Unsplash"
@@ -8162,6 +8691,11 @@
                 "url": "https://images.unsplash.com/photo-1750796360570-4b88996084c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw1fHxQb29kbGUlMjAlMjhUb3klMjl8ZW58MHx8fHwxNzY3MTY0OTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Matt Clark",
                 "source": "Unsplash"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2021/12/15/15/37/animal-6872876_1280.jpg",
+                "author": "AntiM_photography",
+                "source": "Pixabay"
             }
         ]
     },
@@ -8187,7 +8721,18 @@
         "trainability_category": "",
         "demeanor_value": "0.6",
         "demeanor_category": "Alert/Responsive",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Porcelaine_2009_pl.jpg/500px-Porcelaine_2009_pl.jpg",
+                "author": "Pleple2000",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Porcelaine_g%C5%82owa_pl.jpg",
+                "author": "Pleple2000",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Portuguese Podengo",
@@ -8211,7 +8756,18 @@
         "trainability_category": "Agreeable",
         "demeanor_value": "0.4",
         "demeanor_category": "Reserved with Strangers",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Evitarocks_%28cropped%29.jpg",
+                "author": "APPMGC",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://images.pexels.com/photos/5669816/pexels-photo-5669816.jpeg",
+                "author": "Mathias Reding",
+                "source": "Pexels"
+            }
+        ]
     },
     {
         "name": "Portuguese Podengo Pequeno",
@@ -8235,7 +8791,18 @@
         "trainability_category": "Agreeable",
         "demeanor_value": "0.8",
         "demeanor_category": "Friendly",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Evitarocks_%28cropped%29.jpg",
+                "author": "APPMGC",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://images.pexels.com/photos/5669816/pexels-photo-5669816.jpeg",
+                "author": "Mathias Reding",
+                "source": "Pexels"
+            }
+        ]
     },
     {
         "name": "Portuguese Pointer",
@@ -8259,7 +8826,13 @@
         "trainability_category": "Eager to Please",
         "demeanor_value": "0.8",
         "demeanor_category": "Friendly",
-        "images": []
+        "images": [
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=8109940484&secret=79a1d08768&size=c&source=photoPageEngagement",
+                "author": "Petful.com",
+                "source": "Flickr"
+            }
+        ]
     },
     {
         "name": "Portuguese Sheepdog",
@@ -8283,7 +8856,13 @@
         "trainability_category": "",
         "demeanor_value": "",
         "demeanor_category": "",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Owczarek_portugalski_g%C5%82owa_pl.jpg/1280px-Owczarek_portugalski_g%C5%82owa_pl.jpg",
+                "author": "Pleple2000",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Portuguese Water Dog",
@@ -8314,9 +8893,9 @@
                 "source": "Unsplash"
             },
             {
-                "url": "https://images.unsplash.com/photo-1601549912730-9af687eca75b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwyfHxQb3J0dWd1ZXNlJTIwV2F0ZXIlMjBEb2d8ZW58MHx8fHwxNzY3MjI3NTY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Zé Maria",
-                "source": "Unsplash"
+                "url": "https://images.pexels.com/photos/32815771/pexels-photo-32815771.jpeg",
+                "author": "Carol Stevens",
+                "source": "Pexels"
             },
             {
                 "url": "https://images.unsplash.com/photo-1601549903632-7a86d9ed7ded?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwzfHxQb3J0dWd1ZXNlJTIwV2F0ZXIlMjBEb2d8ZW58MHx8fHwxNzY3MjI3NTY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -8324,14 +8903,14 @@
                 "source": "Unsplash"
             },
             {
-                "url": "https://images.unsplash.com/photo-1740066925617-e932355bff6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw0fHxQb3J0dWd1ZXNlJTIwV2F0ZXIlMjBEb2d8ZW58MHx8fHwxNzY3MjI3NTY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Ethan Scott Baird",
-                "source": "Unsplash"
+                "url": "https://www.flickr.com/photo_download.gne?id=50674645056&secret=02dba4f231&size=c&source=photoPageEngagement",
+                "author": "Gamma Man",
+                "source": "Flickr"
             },
             {
-                "url": "https://images.unsplash.com/photo-1733247268692-714311505e71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw1fHxQb3J0dWd1ZXNlJTIwV2F0ZXIlMjBEb2d8ZW58MHx8fHwxNzY3MjI3NTY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Richard Kemp",
-                "source": "Unsplash"
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Juni_2009_alle_nahaufnahmen_034.JPG/960px-Juni_2009_alle_nahaufnahmen_034.JPG",
+                "author": "dietlind scholz",
+                "source": "Wikipedia"
             }
         ]
     },
@@ -8357,7 +8936,13 @@
         "trainability_category": "",
         "demeanor_value": "",
         "demeanor_category": "",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Pudelpointer_on_point.jpg",
+                "author": "Arthurrh",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Pug",
@@ -8383,6 +8968,11 @@
         "demeanor_category": "Friendly",
         "images": [
             {
+                "url": "https://images.pexels.com/photos/1289557/pexels-photo-1289557.jpeg",
+                "author": "Steshka Croes",
+                "source": "Pexels"
+            },
+            {
                 "url": "https://images.unsplash.com/photo-1523626797181-8c5ae80d40c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwyfHxQdWd8ZW58MHx8fHwxNzY3MjI3NTcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "charlesdeluvio",
                 "source": "Unsplash"
@@ -8396,6 +8986,11 @@
                 "url": "https://images.unsplash.com/photo-1535909339361-ef56e179d637?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw0fHxQdWd8ZW58MHx8fHwxNzY3MjI3NTcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Mink Mingle",
                 "source": "Unsplash"
+            },
+            {
+                "url": "https://images.pexels.com/photos/3609068/pexels-photo-3609068.jpeg",
+                "author": "Александр Македонский",
+                "source": "Pexels"
             }
         ]
     },
@@ -8421,7 +9016,28 @@
         "trainability_category": "Independent",
         "demeanor_value": "0.4",
         "demeanor_category": "Reserved with Strangers",
-        "images": []
+        "images": [
+            {
+                "url": "https://cdn.pixabay.com/photo/2020/06/13/04/26/puli-5292660_1280.jpg",
+                "author": "kidsnewshu",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2015/03/29/21/48/dog-697759_1280.jpg",
+                "author": "pzsolt",
+                "source": "Pixabay"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=262133890&secret=b19fe6a8b7&size=c&source=photoPageEngagement",
+                "author": "Tanja de Bie",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Rennender_Puli.JPG",
+                "author": "Haplochromis",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Pumi",
@@ -8445,7 +9061,13 @@
         "trainability_category": "Easy Training",
         "demeanor_value": "0.6",
         "demeanor_category": "Alert/Responsive",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Rennender_Puli.JPG",
+                "author": "Haplochromis",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Pyrenean Mastiff",
@@ -8469,7 +9091,13 @@
         "trainability_category": "",
         "demeanor_value": "",
         "demeanor_category": "",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Rennender_Puli.JPG",
+                "author": "Haplochromis",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Pyrenean Shepherd",
@@ -8493,7 +9121,13 @@
         "trainability_category": "Agreeable",
         "demeanor_value": "0.4",
         "demeanor_category": "Reserved with Strangers",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Rennender_Puli.JPG",
+                "author": "Haplochromis",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Rafeiro do Alentejo",
@@ -8517,7 +9151,13 @@
         "trainability_category": "",
         "demeanor_value": "",
         "demeanor_category": "",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Rennender_Puli.JPG",
+                "author": "Haplochromis",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Rat Terrier",
