@@ -1,5 +1,6 @@
-import { Modal, View, TouchableOpacity, Animated, Dimensions, PanResponder, ScrollView } from 'react-native';
+import { Modal, View, TouchableOpacity, Animated, Dimensions, ScrollView } from 'react-native';
 import { useEffect, useRef } from 'react';
+import { Ionicons } from '@expo/vector-icons';
 import { Dog } from '@/types/dog';
 import { DogDetailContent } from "@/components/DogDetailContent";
 
@@ -10,7 +11,6 @@ interface DogDetailModalProps {
 }
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
-const DRAG_THRESHOLD = 100;
 
 const DogDetailModal = ({ visible, dog, onClose }: DogDetailModalProps) => {
     const slideAnim = useRef(new Animated.Value(SCREEN_HEIGHT)).current;
@@ -27,37 +27,20 @@ const DogDetailModal = ({ visible, dog, onClose }: DogDetailModalProps) => {
         }
     }, [visible]);
 
-    const panResponder = useRef(
-        PanResponder.create({
-            onStartShouldSetPanResponder: () => true,
-            onPanResponderMove: (_, gestureState) => {
-                if (gestureState.dy > 0) {
-                    slideAnim.setValue(gestureState.dy);
-                }
-            },
-            onPanResponderRelease: (_, gestureState) => {
-                if (gestureState.dy > DRAG_THRESHOLD) {
-                    Animated.timing(slideAnim, {
-                        toValue: SCREEN_HEIGHT,
-                        duration: 250,
-                        useNativeDriver: true,
-                    }).start(() => onClose());
-                } else {
-                    Animated.spring(slideAnim, {
-                        toValue: 0,
-                        useNativeDriver: true,
-                    }).start();
-                }
-            },
-        })
-    ).current;
+    const handleClose = () => {
+        Animated.timing(slideAnim, {
+            toValue: SCREEN_HEIGHT,
+            duration: 250,
+            useNativeDriver: true,
+        }).start(() => onClose());
+    };
 
     if (!visible) return null;
 
     return (
-        <Modal visible={visible} transparent animationType="none" onRequestClose={onClose}>
+        <Modal visible={visible} transparent animationType="none" onRequestClose={handleClose}>
             <View style={{ flex: 1, backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-                <TouchableOpacity activeOpacity={1} onPress={onClose} style={{ flex: 1 }} />
+                <TouchableOpacity activeOpacity={1} onPress={handleClose} style={{ flex: 1}} />
 
                 <Animated.View
                     style={{
@@ -73,29 +56,35 @@ const DogDetailModal = ({ visible, dog, onClose }: DogDetailModalProps) => {
                         overflow: 'hidden',
                     }}
                 >
-                    {/* Drag Handle */}
-                    <View
-                        {...panResponder.panHandlers}
-                        style={{
-                            paddingTop: 12,
-                            paddingBottom: 20,
-                            alignItems: 'center',
-                            backgroundColor: 'white',
-                            zIndex: 10,
-                        }}
-                    >
-                        <View style={{
-                            width: 40,
-                            height: 5,
-                            backgroundColor: '#D1D5DB',
-                            borderRadius: 10,
-                        }} />
+                    {/* Close Button */}
+                    <View style={{
+                        paddingTop: 16,
+                        paddingHorizontal: 24,
+                        paddingBottom: 8,
+                        backgroundColor: 'white',
+                        zIndex: 10,
+                    }}>
+                        <TouchableOpacity
+                            onPress={handleClose}
+                            style={{
+                                position: 'absolute',
+                                top: 14,
+                                right: 16,
+                                width: 32,
+                                height: 32,
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                            }}
+                            activeOpacity={0.7}
+                        >
+                            <Ionicons name="close" size={24} color="#9CA3AF" />
+                        </TouchableOpacity>
                     </View>
 
                     {/* Scrollable Content */}
                     <ScrollView
                         style={{ flex: 1 }}
-                        contentContainerStyle={{ paddingHorizontal: 24, paddingBottom: 60 }}
+                        contentContainerStyle={{ paddingHorizontal: 24, paddingBottom: 60, paddingTop: 24 }}
                         showsVerticalScrollIndicator={true}
                         bounces={true}
                     >

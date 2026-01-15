@@ -9063,8 +9063,23 @@
         "demeanor_category": "Alert/Responsive",
         "images": [
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Rennender_Puli.JPG",
-                "author": "Haplochromis",
+                "url": "https://www.flickr.com/photo_download.gne?id=8109928553&secret=bcbc5c336f&size=c&source=photoPageEngagement",
+                "author": "Petful.com",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/en/6/61/Pumi9.jpg",
+                "author": "Zoltan Levai",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Pumi_1.jpg",
+                "author": "Unknown",
+                "source": "Wikipedia"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Pumi_agility.jpg",
+                "author": "MapReader",
                 "source": "Wikipedia"
             }
         ]
@@ -9093,9 +9108,19 @@
         "demeanor_category": "",
         "images": [
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Rennender_Puli.JPG",
-                "author": "Haplochromis",
-                "source": "Wikipedia"
+                "url": "https://www.flickr.com/photo_download.gne?id=8174834704&secret=9c84d2455f&size=c&source=photoPageEngagement",
+                "author": "Marauder Dawn",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=3322737795&secret=9da482a7b3&size=c&source=photoPageEngagement",
+                "author": "Daisyree Bakker",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=14415858711&secret=b369fa0c90&size=c&source=photoPageEngagement",
+                "author": "VirtualWolf",
+                "source": "Flickr"
             }
         ]
     },
@@ -9123,9 +9148,19 @@
         "demeanor_category": "Reserved with Strangers",
         "images": [
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Rennender_Puli.JPG",
-                "author": "Haplochromis",
-                "source": "Wikipedia"
+                "url": "https://www.flickr.com/photo_download.gne?id=33455443508&secret=d74188deb6&size=c&source=photoPageEngagement",
+                "author": "amodelofcontrol",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=4393832290&secret=10dc4971c7&size=c&source=photoPageEngagement",
+                "author": "Llima",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=16584117342&secret=e8ebe36407&size=c&source=photoPageEngagement",
+                "author": "Petful.com",
+                "source": "Flickr"
             }
         ]
     },
@@ -9153,8 +9188,8 @@
         "demeanor_category": "",
         "images": [
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Rennender_Puli.JPG",
-                "author": "Haplochromis",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Rafeiro_male.jpg?20110412225601",
+                "author": "Georgepedia",
                 "source": "Wikipedia"
             }
         ]
@@ -9183,6 +9218,16 @@
         "demeanor_category": "Friendly",
         "images": [
             {
+                "url": "https://images.pexels.com/photos/11448422/pexels-photo-11448422.jpeg",
+                "author": "Brigitte Miller",
+                "source": "Pexels"
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2021/12/17/09/10/rat-terrier-6876051_1280.jpg",
+                "author": "annapowa",
+                "source": "Pixabay"
+            },
+            {
                 "url": "https://images.unsplash.com/photo-1647107303671-71a8e02e7aa0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwxfHxSYXQlMjBUZXJyaWVyfGVufDB8fHx8MTc2NzIyNzU4NHww&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Kathy Morales",
                 "source": "Unsplash"
@@ -9191,6 +9236,11 @@
                 "url": "https://images.unsplash.com/photo-1742608499132-a3de475fb5a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw0fHxSYXQlMjBUZXJyaWVyfGVufDB8fHx8MTc2NzIyNzU4NHww&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Antoine Pouligny",
                 "source": "Unsplash"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=4427675393&secret=6ac9dd5f18&size=c&source=photoPageEngagement",
+                "author": "LifeSupercharger",
+                "source": "Flickr"
             }
         ]
     },
@@ -9216,7 +9266,28 @@
         "trainability_category": "Easy Training",
         "demeanor_value": "0.8",
         "demeanor_category": "Friendly",
-        "images": []
+        "images": [
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=5301113133&secret=5e08748920&size=c&source=photoPageEngagement",
+                "author": "Dan Harrelson",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=10420154014&secret=7b42f95f8f&size=c&source=photoPageEngagement",
+                "author": "gailhampshire",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=6923371960&secret=f14f4f3a51&size=c&source=photoPageEngagement",
+                "author": "swineland",
+                "source": "Flickr"
+            },
+            {
+                "url": "https://www.flickr.com/photo_download.gne?id=405902231&secret=4aa1fc70e2&size=c&source=photoPageEngagement",
+                "author": "Dan Harrelson",
+                "source": "Flickr"
+            }
+        ]
     },
     {
         "name": "Rhodesian Ridgeback",
@@ -9247,9 +9318,19 @@
                 "source": "Unsplash"
             },
             {
+                "url": "https://images.pexels.com/photos/29578737/pexels-photo-29578737.jpeg",
+                "author": "Gundula Vogel",
+                "source": "Pexels"
+            },
+            {
                 "url": "https://images.unsplash.com/photo-1658745230031-6bb339616204?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwyfHxSaG9kZXNpYW4lMjBSaWRnZWJhY2t8ZW58MHx8fHwxNzY3MjI3NTg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Justus Menke",
                 "source": "Unsplash"
+            },
+            {
+                "url": "https://images.pexels.com/photos/20620968/pexels-photo-20620968.jpeg",
+                "author": "Carolin Wenske",
+                "source": "Pexels"
             },
             {
                 "url": "https://images.unsplash.com/photo-1612696733290-a2a26ce8131c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw0fHxSaG9kZXNpYW4lMjBSaWRnZWJhY2t8ZW58MHx8fHwxNzY3MjI3NTg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -9280,7 +9361,13 @@
         "trainability_category": "Independent",
         "demeanor_value": "0.2",
         "demeanor_category": "Aloof/Wary",
-        "images": []
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Mioritic.jpg",
+                "author": "Summer06",
+                "source": "Wikipedia"
+            }
+        ]
     },
     {
         "name": "Rottweiler",
@@ -9316,11 +9403,6 @@
                 "source": "Unsplash"
             },
             {
-                "url": "https://images.unsplash.com/photo-1643811356771-dc2c1a53e235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwzfHxSb3R0d2VpbGVyfGVufDB8fHx8MTc2NzIyNzU5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-                "author": "Kevin Seibel",
-                "source": "Unsplash"
-            },
-            {
                 "url": "https://images.unsplash.com/photo-1673474025690-eacc81e21daa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw0fHxSb3R0d2VpbGVyfGVufDB8fHx8MTc2NzIyNzU5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "mr.forged",
                 "source": "Unsplash"
@@ -9328,6 +9410,11 @@
             {
                 "url": "https://images.unsplash.com/photo-1669109947479-728a0d33b9b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHw1fHxSb3R0d2VpbGVyfGVufDB8fHx8MTc2NzIyNzU5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
                 "author": "Michael Jahn",
+                "source": "Unsplash"
+            },
+            {
+                "url": "https://images.unsplash.com/photo-1643811356771-dc2c1a53e235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwzfHxSb3R0d2VpbGVyfGVufDB8fHx8MTc2NzIyNzU5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+                "author": "Kevin Seibel",
                 "source": "Unsplash"
             }
         ]
