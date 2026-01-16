@@ -25,6 +25,8 @@ Todo:
 * like logic can bug out due to fast likes. ask gpt what can go wrong and how to fix
 * cant spam click left or right on photos
 * Write disclaimer that pictures might be wrong. Picked out by a human, and no ai generated images
+* if only two dogs in liked dogs, they will go on right and left side. fix this
+* fix bottom of liked and disliked dogs
 
 
 Photos:
@@ -33,3 +35,6 @@ Photos:
 * make better use of puppy photos
 * 23 dogs are missing photos, fetch photos for them
 * some dog photos are incorrect, wrongly cropped. go through manually and fix
+* Wikipedia photos need CC
+* Script to check all sources are written correctly
+* Check if any of the desc. has space infront or at end
