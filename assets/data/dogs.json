@@ -457,7 +457,6 @@
                 "author": "Erwin Bosman",
                 "source": "Pexels"
             }
-
         ]
     },
     {
@@ -577,7 +576,8 @@
                 "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/American_Water_Spaniel_001.jpg",
                 "author": "Noma's American Water Spaniels",
                 "source": "Wikipedia"
-            },            {
+            },
+            {
                 "url": "https://www.flickr.com/photo_download.gne?id=124343668&secret=e922ae9bdd&size=o&source=photoPageEngagement",
                 "author": "Noma's American Water Spaniels",
                 "source": "Flickr"
@@ -969,7 +969,7 @@
         "images": [
             {
                 "url": "https://www.flickr.com/photo_download.gne?id=2053891799&secret=f20a66e34a&size=c&source=photoPageEngagement",
-                "author": "*Tom [luckytom] \uF8FF",
+                "author": "*Tom [luckytom] ",
                 "source": "Flickr"
             },
             {
@@ -1455,7 +1455,7 @@
             {
                 "url": "https://www.flickr.com/photo_download.gne?id=53330636363&secret=9f23c1778a&size=c&source=photoPageEngagement",
                 "author": "Juhele_CZ",
-                "source": "Flickrr"
+                "source": "Flickr"
             },
             {
                 "url": "https://images.unsplash.com/photo-1562877448-77e87c1dbb25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDk1NTF8MHwxfHNlYXJjaHwyfHxCZWxnaWFuJTIwU2hlZXBkb2d8ZW58MHx8fHwxNzY3MDA4NjM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -2914,7 +2914,7 @@
         "images": [
             {
                 "url": "https://images.pexels.com/photos/14267220/pexels-photo-14267220.jpeg",
-                "author": "Viktorya Sergeeva \uD83E\uDEC2",
+                "author": "Viktorya Sergeeva 🫂",
                 "source": "Pexels"
             },
             {
@@ -11330,7 +11330,7 @@
             {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Dog_Boss.jpg?20230416234126",
                 "author": "Academician.NYAS",
-                "source": "Wikipeida"
+                "source": "Wikipedia"
             },
             {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Tosa_inu_786.jpg/640px-Tosa_inu_786.jpg",
@@ -11751,7 +11751,7 @@
     },
     {
         "name": "Wetterhoun",
-        "description": " The Wetterhoun, although originally bred for hunting otters, now make excellent companions, watchdogs, and can excel in a variety of sports due to their perseverant nature.  The Wetterhoun is almost never seen apart from its owner; they enjoy their company as much as the owner enjoys theirs.",
+        "description": "The Wetterhoun, although originally bred for hunting otters, now make excellent companions, watchdogs, and can excel in a variety of sports due to their perseverant nature.  The Wetterhoun is almost never seen apart from its owner; they enjoy their company as much as the owner enjoys theirs.",
         "temperament": "Loyal, Good-Natured, Intelligent",
         "popularity": "",
         "min_height": 12.7,
@@ -12155,17 +12155,17 @@
             {
                 "url": "https://images.pexels.com/photos/33713088/pexels-photo-33713088.jpeg",
                 "author": "Abril Ulfe",
-                "source": "Pexles"
+                "source": "Pexels"
             },
             {
                 "url": "https://images.pexels.com/photos/33481387/pexels-photo-33481387.jpeg",
                 "author": "Jacek Plak",
-                "source": "Pexles"
+                "source": "Pexels"
             },
             {
                 "url": "https://www.flickr.com/photo_download.gne?id=2451023350&secret=9ed36c934e&size=c&source=photoPageEngagement",
                 "author": "SKimchee",
-                "source": "Flickrr"
+                "source": "Flickr"
             }
         ]
     }

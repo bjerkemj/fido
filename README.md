@@ -31,10 +31,4 @@ Todo:
 
 Photos:
 * remember to give credit to photographers and website (unsplash)
-* Check all photos, and update where needed
-* make better use of puppy photos
-* 23 dogs are missing photos, fetch photos for them
-* some dog photos are incorrect, wrongly cropped. go through manually and fix
 * Wikipedia photos need CC
-* Script to check all sources are written correctly
-* Check if any of the desc. has space infront or at end
