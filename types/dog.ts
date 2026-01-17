@@ -7,7 +7,7 @@ export interface Dog {
   name: string;
   description: string;
   temperament: string;
-  popularity: number | string;
+  popularity: number | null;
   min_height: number;
   max_height: number;
   min_weight: number;
