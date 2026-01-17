@@ -6,7 +6,7 @@ import ImageCarousel from "@/components/ImageCarousel";
 import DogDetailModal from "@/components/DogDetailModal";
 import allDogs from "@/assets/data/dogs.json";
 import { Dog } from "@/types/dog";
-import { getUnseenDogs, addLikedDog, addDislikedDog } from "@/utils/dogStorage";
+import { getUnseenDogsRandomized, addLikedDog, addDislikedDog } from "@/utils/dogStorage";
 
 export default function Index() {
     const [unseenDogs, setUnseenDogs] = useState<Dog[]>([]);
@@ -20,7 +20,7 @@ export default function Index() {
                 Array.isArray(dog.images) && dog.images.length > 0
             );
 
-            const unseen = await getUnseenDogs(dogsWithImages);
+            const unseen = await getUnseenDogsRandomized(dogsWithImages);
             setUnseenDogs(unseen);
             setLoading(false);
         };
