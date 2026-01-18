@@ -35,10 +35,19 @@ const MatchCenter = () => {
     return (
         <SafeAreaView className="flex-1 bg-white">
             <ScrollView className="flex-1" showsVerticalScrollIndicator={false}>
-                {/* HEADER */}
-                <View className="px-6 py-4">
-                    <Text className="text-3xl font-extrabold text-gray-800">Match Center</Text>
-                    <Text className="text-gray-500">Manage your pack and shared matches</Text>
+                {/* In HEADER section */}
+                <View className="px-6 py-4 flex-row justify-between items-center">
+                    <View className="flex-1">
+                        <Text className="text-3xl font-extrabold text-gray-800">Match Center</Text>
+                        <Text className="text-gray-500">Manage your pack and shared matches</Text>
+                    </View>
+                    <TouchableOpacity
+                        onPress={() => router.push('/settings')}
+                        className="p-2"
+                        activeOpacity={0.6}
+                    >
+                        <Ionicons name="settings-outline" size={26} color="#9ca3af" />
+                    </TouchableOpacity>
                 </View>
 
                 {/* PARTNER SYNC PLACEHOLDER */}

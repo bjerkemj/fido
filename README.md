@@ -21,13 +21,13 @@ Todo:
 * affiliate links
 * Create what is to be seen when the stack is empty of dogs
 * Create a better random function
-* add disclaimer, info might be wrong, do proper research online before commiting to purchasing
 * like logic can bug out due to fast likes. ask gpt what can go wrong and how to fix
 * cant spam click left or right on photos
-* Write disclaimer that pictures might be wrong. Picked out by a human, and no ai generated images
 * if only two dogs in liked dogs, they will go on right and left side. fix this
 * fix bottom of liked and disliked dogs
 * check layout of different phones types
+* create logo
+* New Owner Checklist
 
 
 Photos:
