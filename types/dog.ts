@@ -1,6 +1,8 @@
 export interface DogImage {
   url: string;
   author: string;
+  source: string;
+  cc: string | null;
 }
 
 export interface Dog {

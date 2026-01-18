@@ -16,6 +16,7 @@ interface DogDetailContentProps {
 
 export const DogDetailContent = ({ dog, showHeader = true }: DogDetailContentProps) => {
     const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
+    const [creditsExpanded, setCreditsExpanded] = useState(false);
 
     const fullDescription = dog.description || '';
 
@@ -109,6 +110,51 @@ export const DogDetailContent = ({ dog, showHeader = true }: DogDetailContentPro
                 <TraitRow icon="cut-outline" label="Grooming" value={dog.grooming_frequency_category} />
                 <TraitRow icon="leaf-outline" label="Shedding" value={dog.shedding_category} />
                 <TraitRow icon="people-outline" label="Demeanor" value={dog.demeanor_category} />
+            </View>
+
+            {/* Image Credits */}
+            <View style={{ marginTop: 32, paddingTop: 24, borderTopWidth: 1, borderTopColor: '#F3F4F6' }}>
+                <TouchableOpacity
+                    onPress={() => setCreditsExpanded(!creditsExpanded)}
+                    style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}
+                    activeOpacity={0.7}
+                >
+                    <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                        <Ionicons name="camera-outline" size={16} color="#9CA3AF" />
+                        <Text style={{ fontSize: 12, color: '#9CA3AF', marginLeft: 8, fontWeight: '500' }}>
+                            Photo Credits ({dog.images.length})
+                        </Text>
+                    </View>
+                    <Ionicons
+                        name={creditsExpanded ? "chevron-up" : "chevron-down"}
+                        size={16}
+                        color="#9CA3AF"
+                    />
+                </TouchableOpacity>
+
+                {creditsExpanded && (
+                    <View style={{ backgroundColor: '#F9FAFB', borderRadius: 12, padding: 12 }}>
+                        {dog.images.map((image, index) => (
+                            <View
+                                key={index}
+                                style={{
+                                    flexDirection: 'row',
+                                    alignItems: 'center',
+                                    paddingVertical: 6,
+                                    borderBottomWidth: index < dog.images.length - 1 ? 1 : 0,
+                                    borderBottomColor: '#F3F4F6'
+                                }}
+                            >
+                                <Text style={{ fontSize: 11, color: '#6B7280', flex: 1 }}>
+                                    <Text style={{ color: '#9CA3AF' }}>{index + 1}. </Text>
+                                    <Text style={{ fontWeight: '600' }}>{image.author}</Text>
+                                    {' · '}
+                                    <Text style={{ color: '#9CA3AF' }}>{image.source}</Text>
+                                </Text>
+                            </View>
+                        ))}
+                    </View>
+                )}
             </View>
         </>
     );

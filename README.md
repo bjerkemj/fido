@@ -26,12 +26,8 @@ Todo:
 * fix bottom of liked and disliked dogs
 * check layout of different phones types
 * create logo
-
-
-Photos:
-* remember to give credit to photographers and website (unsplash)
 * Wikipedia photos need CC
 
 After launch:
 * New Owner Checklist
-* * Create a better random function
+* Create a better random function
