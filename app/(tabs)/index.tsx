@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Text, View, TouchableOpacity, ActivityIndicator } from "react-native";
+import { Text, View, TouchableOpacity, ActivityIndicator, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from '@expo/vector-icons';
+import { useFonts, Fredoka_500Medium } from '@expo-google-fonts/fredoka';
 import ImageCarousel from "@/components/ImageCarousel";
 import DogDetailModal from "@/components/DogDetailModal";
 import allDogs from "@/assets/data/dogs.json";
@@ -13,6 +14,11 @@ export default function Index() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [loading, setLoading] = useState(true);
     const [modalVisible, setModalVisible] = useState(false);
+
+    // Load fonts
+    const [fontsLoaded] = useFonts({
+        Fredoka_500Medium,
+    });
 
     useEffect(() => {
         const loadDogs = async () => {
@@ -28,6 +34,25 @@ export default function Index() {
         loadDogs();
     }, []);
 
+    // Prefetch images for next 3 dogs
+    useEffect(() => {
+        const prefetchNext = async () => {
+            const nextDogs = unseenDogs.slice(currentIndex + 2, currentIndex + 5);
+
+            for (const dog of nextDogs) {
+                if (Array.isArray(dog.images)) {
+                    for (const image of dog.images.slice(0, 2)) {
+                        Image.prefetch(image.url).catch(() => {});
+                    }
+                }
+            }
+        };
+
+        if (unseenDogs.length > 0) {
+            prefetchNext();
+        }
+    }, [currentIndex, unseenDogs]);
+
     const handleLike = async () => {
         const currentDog = unseenDogs[currentIndex];
         await addLikedDog(currentDog.name);
@@ -40,7 +65,8 @@ export default function Index() {
         setCurrentIndex(prevIndex => prevIndex + 1);
     };
 
-    if (loading) {
+    // Show loading while fonts or data loads
+    if (!fontsLoaded || loading) {
         return (
             <SafeAreaView className="flex-1 bg-white items-center justify-center">
                 <ActivityIndicator size="large" color="#3b82f6" />
@@ -63,26 +89,35 @@ export default function Index() {
     }
 
     const currentDog = unseenDogs[currentIndex];
-    const images = Array.isArray(currentDog.images) ? currentDog.images : [];
-    const nextDogs = unseenDogs.slice(currentIndex + 1, currentIndex + 3);
+    const nextDog1 = unseenDogs[currentIndex + 1];
+    const nextDog2 = unseenDogs[currentIndex + 2];
+
+    const currentImages = Array.isArray(currentDog?.images) ? currentDog.images : [];
+    const nextImages1 = nextDog1 && Array.isArray(nextDog1.images) ? nextDog1.images : [];
+    const nextImages2 = nextDog2 && Array.isArray(nextDog2.images) ? nextDog2.images : [];
 
     return (
         <SafeAreaView className="flex-1 bg-white">
             {/* HEADER */}
             <View className="items-center">
-                <Text className="font-bold text-blue-400 text-2xl">fido</Text>
+                <Text style={{ fontFamily: 'Fredoka_500Medium', fontSize: 32, color: '#60a5fa' }}>
+                    fido
+                </Text>
             </View>
 
             {/* MIDDLE */}
             <View className="flex-1 items-center justify-center px-4">
-                <ImageCarousel key={currentDog.name} images={images} />
+                {/* Current dog - visible */}
+                <ImageCarousel key={currentDog.name} images={currentImages} />
 
-                {/* Pre-render next dogs off-screen */}
+                {/* Pre-mount NEXT 2 dogs - hidden but mounted */}
                 <View style={{ position: 'absolute', left: -10000, top: 0 }}>
-                    {nextDogs.map((dog) => {
-                        const dogImages = Array.isArray(dog.images) ? dog.images : [];
-                        return <ImageCarousel key={dog.name} images={dogImages} />;
-                    })}
+                    {nextDog1 && nextImages1.length > 0 && (
+                        <ImageCarousel key={nextDog1.name} images={nextImages1} />
+                    )}
+                    {nextDog2 && nextImages2.length > 0 && (
+                        <ImageCarousel key={nextDog2.name} images={nextImages2} />
+                    )}
                 </View>
             </View>
 
