@@ -39,7 +39,7 @@ const MatchCenter = () => {
                 <View className="px-6 py-4 flex-row justify-between items-center">
                     <View className="flex-1">
                         <Text className="text-3xl font-extrabold text-gray-800">Match Center</Text>
-                        <Text className="text-gray-500">Manage your pack and shared matches</Text>
+                        <Text className="text-gray-500">Manage your pack</Text>
                     </View>
                     <TouchableOpacity
                         onPress={() => router.push('/settings')}
@@ -49,20 +49,6 @@ const MatchCenter = () => {
                         <Ionicons name="settings-outline" size={26} color="#9ca3af" />
                     </TouchableOpacity>
                 </View>
-
-                {/* PARTNER SYNC PLACEHOLDER */}
-                <TouchableOpacity
-                    className="mx-6 mb-8 p-6 rounded-3xl bg-blue-50 border-2 border-blue-100 flex-row items-center justify-between"
-                    activeOpacity={0.9}
-                >
-                    <View className="flex-1 mr-4">
-                        <Text className="text-blue-600 font-bold text-lg">Better Together</Text>
-                        <Text className="text-blue-400 text-sm">Link with a partner to see which dogs you both love!</Text>
-                    </View>
-                    <View className="bg-blue-400 p-3 rounded-full">
-                        <Text className="text-white font-bold">Link</Text>
-                    </View>
-                </TouchableOpacity>
 
                 {/* SECTIONS */}
                 <DogSection
@@ -83,25 +69,23 @@ const MatchCenter = () => {
                     />
                 </View>
 
-                {/* PREMIUM SECTION */}
-                <View className="mx-6 my-10 p-8 rounded-[32px] bg-amber-50/30 border-2 border-amber-200/50 items-center">
-                    <View className="flex-row items-center mb-4">
-                        <Ionicons name="sparkles" size={16} color="#D4AF37" />
-                        <Text style={{ color: '#D4AF37' }} className="font-bold uppercase tracking-[3px] text-[10px] ml-2">
-                            Fido Premium
+                {/* COMING SECTION */}
+                <View className="mx-6 mb-8 p-6 rounded-3xl bg-blue-50 border-2 border-blue-100 flex-row items-center justify-between">
+                    {/* Left side: text */}
+                    <View className="flex-1 mr-4">
+                        <Text className="text-blue-600 font-bold text-lg">Exciting Updates Ahead!</Text>
+                        <Text className="text-blue-400 text-sm">
+                            We’re working on new features just for you. Got ideas or feedback? We’d love to hear them!
                         </Text>
                     </View>
-                    <Text className="text-gray-600 text-center mb-6 leading-5 px-4">
-                        Unlock advanced breed filters and sync your pack with a partner.
-                    </Text>
-                    <TouchableOpacity
-                        activeOpacity={0.8}
-                        style={{ backgroundColor: '#D4AF37', elevation: 5 }}
-                        className="px-8 py-3 rounded-full"
-                    >
-                        <Text className="text-white font-bold text-sm">Upgrade Now</Text>
-                    </TouchableOpacity>
+
+                    {/* Right side: optional icon */}
+                    <View>
+                        <Text className="text-blue-300 font-bold text-xl">🚀</Text>
+                    </View>
                 </View>
+
+
             </ScrollView>
         </SafeAreaView>
     );

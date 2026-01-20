@@ -28,7 +28,7 @@ const Settings = () => {
                         <SettingsItem
                             icon="checkmark-circle-outline"
                             label="New Owner Checklist"
-                            onPress={() => router.push('/about/new-owner-checklist')}
+                            onPress={() => router.push('/settings/new-owner-checklist')}
                         />
                     </SettingsSection>
 
@@ -37,17 +37,17 @@ const Settings = () => {
                         <SettingsItem
                             icon="information-circle-outline"
                             label="Disclaimers"
-                            onPress={() => router.push('/about/disclaimers')}
+                            onPress={() => router.push('/settings/disclaimers')}
                         />
                         <SettingsItem
                             icon="shield-outline"
                             label="Privacy Policy"
-                            onPress={() => router.push('/about/privacy')}
+                            onPress={() => router.push('/settings/privacy')}
                         />
                         <SettingsItem
                             icon="document-text-outline"
                             label="Terms of Service"
-                            onPress={() => router.push('/about/terms')}
+                            onPress={() => router.push('/settings/terms')}
                         />
                     </SettingsSection>
 

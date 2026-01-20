@@ -15,9 +15,21 @@ export default function RootLayout() {
               headerShown: false
         }}
       />
-      {/*<Stack.Screen
-          name="Home"
+      <Stack.Screen
+          name="settings"
           options={{ headerShown: false }}
-      />*/}
+      />
+      <Stack.Screen
+          name="settings/new-owner-checklist"
+          options={{ headerShown: false }}
+      />
+      <Stack.Screen
+          name="settings/disclaimers"
+          options={{ headerShown: false }}
+      />
+      <Stack.Screen
+          name="settings/terms"
+          options={{ headerShown: false }}
+      />
     </Stack>
 }
