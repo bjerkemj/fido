@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Text, View, TouchableOpacity, ActivityIndicator, Image } from "react-native";
+import {Text, View, TouchableOpacity, ActivityIndicator, Image, ScrollView} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from '@expo/vector-icons';
 import { useFonts, Fredoka_500Medium } from '@expo-google-fonts/fredoka';
@@ -8,6 +8,7 @@ import DogDetailModal from "@/components/DogDetailModal";
 import allDogs from "@/assets/data/dogs.json";
 import { Dog } from "@/types/dog";
 import { getUnseenDogsRandomized, addLikedDog, addDislikedDog } from "@/utils/dogStorage";
+import {router} from "expo-router";
 
 export default function Index() {
     const [unseenDogs, setUnseenDogs] = useState<Dog[]>([]);
@@ -77,15 +78,62 @@ export default function Index() {
 
     if (currentIndex >= unseenDogs.length) {
         return (
-            <SafeAreaView className="flex-1 bg-white items-center justify-center">
-                <Text className="text-2xl font-bold text-gray-800">
-                    All done!
-                </Text>
-                <Text className="mt-2 text-gray-600">
-                    You've seen all the dogs
-                </Text>
+            <SafeAreaView className="flex-1 bg-white" edges={['top']}>
+                <ScrollView
+                    contentContainerStyle={{ flexGrow: 1, justifyContent: 'center', padding: 24 }}
+                    showsVerticalScrollIndicator={false}
+                >
+                    {/* Header */}
+                    <View className="items-center mb-8">
+                        <Text className="text-3xl font-extrabold text-gray-800">All done!</Text>
+                        <Text className="text-gray-500 text-center mt-2">
+                            You've gone through all the dogs available.
+                        </Text>
+                    </View>
+
+                    {/* Action sections */}
+                    <TouchableOpacity
+                        className="mb-6 p-5 rounded-3xl bg-green-50 border-2 border-green-100 flex-row items-center justify-between shadow-sm"
+                        activeOpacity={0.8}
+                        onPress={() => router.push('/dog-list/liked')}
+                    >
+                        <View className="flex-1 mr-4">
+                            <Text className="text-green-600 font-bold text-lg">Check out your liked dogs</Text>
+                            <Text className="text-green-500 text-sm mt-1">
+                                Narrow down your favorites and find your perfect companion!
+                            </Text>
+                        </View>
+                        <View className="bg-green-100 p-3 rounded-full">
+                            <Ionicons name="arrow-forward" size={24} color="#22c55e" />
+                        </View>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        className="mb-6 p-5 rounded-3xl bg-blue-50 border-2 border-blue-100 flex-row items-center justify-between shadow-sm"
+                        activeOpacity={0.8}
+                        onPress={() => router.push('/new-owner-checklist')}
+                    >
+                        <View className="flex-1 mr-4">
+                            <Text className="text-blue-600 font-bold text-lg">Go to New Owner Checklist</Text>
+                            <Text className="text-blue-500 text-sm mt-1">
+                                Prepare yourself with everything you need before bringing your dog home!
+                            </Text>
+                        </View>
+                        <View className="bg-blue-100 p-3 rounded-full">
+                            <Ionicons name="arrow-forward" size={24} color="#3b82f6" />
+                        </View>
+                    </TouchableOpacity>
+
+                    {/* Optional fun message at the bottom */}
+                    <View className="mt-8 items-center">
+                        <Text className="text-gray-400 text-sm text-center">
+                            🐾 Take your time exploring and preparing—your future dog will thank you!
+                        </Text>
+                    </View>
+                </ScrollView>
             </SafeAreaView>
         );
+
     }
 
     const currentDog = unseenDogs[currentIndex];

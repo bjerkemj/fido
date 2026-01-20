@@ -20,7 +20,6 @@ Todo:
 * Create what is to be seen when the stack is empty
 * check layout of different phones types
 * Wikipedia photos need CC
-* fix settings header stuff
 
 Final fixes:
 * delete more tab

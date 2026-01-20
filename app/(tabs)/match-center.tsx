@@ -94,18 +94,18 @@ const MatchCenter = () => {
                 </View>
 
                 {/* COMING SECTION */}
-                <View className="mx-6 mb-8 p-6 rounded-3xl bg-blue-50 border-2 border-blue-100 flex-row items-center justify-between">
+                <View className="mx-6 mb-8 p-6 rounded-3xl bg-yellow-50 border-2 border-yellow-100 flex-row items-center justify-between">
                     {/* Left side: text */}
                     <View className="flex-1 mr-4">
-                        <Text className="text-blue-600 font-bold text-lg">Exciting Updates Ahead!</Text>
-                        <Text className="text-blue-400 text-sm">
+                        <Text className="text-yellow-600 font-bold text-lg">Exciting Updates Ahead!</Text>
+                        <Text className="text-yellow-500 text-sm">
                             We’re working on new features just for you. Got ideas or feedback? We’d love to hear them!
                         </Text>
                     </View>
 
                     {/* Right side: optional icon */}
                     <View>
-                        <Text className="text-blue-300 font-bold text-xl">🚀</Text>
+                        <Text className="text-yellow-400 font-bold text-xl">🚀</Text>
                     </View>
                 </View>
 

@@ -2,7 +2,7 @@ export interface DogImage {
   url: string;
   author: string;
   source: string;
-  cc: string | null;
+  license: string | null;
 }
 
 export interface Dog {
@@ -28,5 +28,4 @@ export interface Dog {
   demeanor_value: string;
   demeanor_category: string;
   images: DogImage[];
-  images_puppy: DogImage[];
 }
