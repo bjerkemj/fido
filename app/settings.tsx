@@ -23,15 +23,6 @@ const Settings = () => {
 
                 {/* SECTIONS */}
                 <View className="px-6 py-6">
-                    {/* Helpful Resources */}
-                    <SettingsSection title="Helpful Resources">
-                        <SettingsItem
-                            icon="checkmark-circle-outline"
-                            label="New Owner Checklist"
-                            onPress={() => router.push('/settings/new-owner-checklist')}
-                        />
-                    </SettingsSection>
-
                     {/* About & Legal */}
                     <SettingsSection title="About & Legal">
                         <SettingsItem

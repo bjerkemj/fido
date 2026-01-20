@@ -51,6 +51,26 @@ const MatchCenter = () => {
                 </View>
 
                 {/* SECTIONS */}
+                <TouchableOpacity
+                    className="mx-6 mb-6 p-5 rounded-3xl bg-blue-50 border border-blue-100 flex-row items-center justify-between shadow-sm"
+                    activeOpacity={0.8}
+                    onPress={() => router.push('/new-owner-checklist')}
+                >
+                    {/* Left side: text */}
+                    <View className="flex-1 mr-4">
+                        <Text className="text-blue-600 font-bold text-lg">New Owner Checklist</Text>
+                        <Text className="text-blue-500 text-sm mt-1">
+                            Take the first steps to prepare for your future dog!
+                        </Text>
+                    </View>
+
+                    {/* Right side: arrow icon */}
+                    <View className="bg-blue-100 p-3 rounded-full">
+                        <Ionicons name="arrow-forward" size={24} color="#3b82f6" />
+                    </View>
+                </TouchableOpacity>
+
+
                 <DogSection
                     title="Liked Dogs"
                     dogs={likedList}

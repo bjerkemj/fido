@@ -34,6 +34,9 @@ After launch:
 * Create a better random function
 * make preloading of images more snappy
 * cant spam click left or right on photos (do i really care about that?)
-* * affiliate links
+* affiliate links:
+* Culture clash
+* Before and After Getting Your Puppy
+* The Power of Positive Dog Training
 
 

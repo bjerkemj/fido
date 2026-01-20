@@ -13,14 +13,16 @@ export default function RootLayout() {
           name="dogs/[id]"
           options={{
               headerShown: false
-        }}
+          }}
+      />
+      <Stack.Screen
+          name="new-owner-checklist"
+          options={{
+              headerShown: false
+          }}
       />
       <Stack.Screen
           name="settings"
-          options={{ headerShown: false }}
-      />
-      <Stack.Screen
-          name="settings/new-owner-checklist"
           options={{ headerShown: false }}
       />
       <Stack.Screen
