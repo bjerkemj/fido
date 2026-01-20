@@ -30,6 +30,10 @@ export default function RootLayout() {
           options={{ headerShown: false }}
       />
       <Stack.Screen
+          name="settings/privacy"
+          options={{ headerShown: false }}
+      />
+      <Stack.Screen
           name="settings/terms"
           options={{ headerShown: false }}
       />
