@@ -33,8 +33,12 @@ const MatchCenter = () => {
     );
 
     return (
-        <SafeAreaView className="flex-1 bg-white">
-            <ScrollView className="flex-1" showsVerticalScrollIndicator={false}>
+        <SafeAreaView className="flex-1 bg-white" edges={['top']}>
+            <ScrollView
+                className="flex-1"
+                showsVerticalScrollIndicator={false}
+                contentContainerStyle={{ paddingBottom: 20 }}
+            >
                 {/* In HEADER section */}
                 <View className="px-6 py-4 flex-row justify-between items-center">
                     <View className="flex-1">

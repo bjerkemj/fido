@@ -97,7 +97,7 @@ export default function Index() {
     const nextImages2 = nextDog2 && Array.isArray(nextDog2.images) ? nextDog2.images : [];
 
     return (
-        <SafeAreaView className="flex-1 bg-white">
+        <SafeAreaView className="flex-1 bg-white" edges={['top']}>
             {/* HEADER */}
             <View className="items-center">
                 <Text style={{ fontFamily: 'Fredoka_500Medium', fontSize: 32, color: '#60a5fa' }}>
@@ -150,7 +150,7 @@ export default function Index() {
                 </View>
 
                 {/* Buttons */}
-                <View className="flex-row items-center justify-center gap-28">
+                <View className="flex-row items-center justify-center gap-28 pb-5">
                     <TouchableOpacity
                         className="w-16 h-16 bg-red-400 rounded-full items-center justify-center shadow"
                         activeOpacity={0.7}
