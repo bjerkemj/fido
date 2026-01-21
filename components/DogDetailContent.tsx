@@ -1,8 +1,10 @@
-import { View, Text, TouchableOpacity, LayoutAnimation, Platform, UIManager } from 'react-native';
+import {View, Text, TouchableOpacity, LayoutAnimation, Platform, UIManager, Linking} from 'react-native';
 import { Dog } from '@/types/dog';
 import { Ionicons } from '@expo/vector-icons';
 import { useState, useMemo } from 'react';
 import { TemperamentChip } from './TemperamentChip';
+import licenses from '@/assets/data/licenses.json';
+import { LicenseInfo } from '@/types/license';
 
 // Enable LayoutAnimation for Android
 if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
@@ -39,6 +41,11 @@ export const DogDetailContent = ({ dog, showHeader = true }: DogDetailContentPro
         // Animates the height change of the container
         LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
         setIsDescriptionExpanded(!isDescriptionExpanded);
+    };
+
+    const getLicenseInfo = (licenseKey: string | null): LicenseInfo | null => {
+        if (!licenseKey) return null;
+        return (licenses as Record<string, LicenseInfo>)[licenseKey] || null;
     };
 
     return (
@@ -134,25 +141,68 @@ export const DogDetailContent = ({ dog, showHeader = true }: DogDetailContentPro
 
                 {creditsExpanded && (
                     <View style={{ backgroundColor: '#F9FAFB', borderRadius: 12, padding: 12 }}>
-                        {dog.images.map((image, index) => (
-                            <View
-                                key={index}
-                                style={{
-                                    flexDirection: 'row',
-                                    alignItems: 'center',
-                                    paddingVertical: 6,
-                                    borderBottomWidth: index < dog.images.length - 1 ? 1 : 0,
-                                    borderBottomColor: '#F3F4F6'
-                                }}
-                            >
-                                <Text style={{ fontSize: 11, color: '#6B7280', flex: 1 }}>
-                                    <Text style={{ color: '#9CA3AF' }}>{index + 1}. </Text>
-                                    <Text style={{ fontWeight: '600' }}>{image.author}</Text>
-                                    {' · '}
-                                    <Text style={{ color: '#9CA3AF' }}>{image.source}</Text>
-                                </Text>
-                            </View>
-                        ))}
+                        {dog.images.map((image, index) => {
+                            const licenseInfo = getLicenseInfo(image.license);
+
+                            return (
+                                <View
+                                    key={index}
+                                    style={{
+                                        paddingVertical: 8,
+                                        borderBottomWidth: index < dog.images.length - 1 ? 1 : 0,
+                                        borderBottomColor: '#F3F4F6'
+                                    }}
+                                >
+                                    {/* Author and Source */}
+                                    <Text style={{ fontSize: 11, color: '#6B7280', marginBottom: 4 }}>
+                                        <Text style={{ color: '#9CA3AF' }}>{index + 1}. </Text>
+                                        <Text style={{ fontWeight: '600' }}>{image.author}</Text>
+                                        {' · '}
+                                        <Text style={{ color: '#9CA3AF' }}>{image.source}</Text>
+                                    </Text>
+
+                                    {/* License Info */}
+                                    {licenseInfo ? (
+                                        // License with link (from licenses.json)
+                                        <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 2, flexWrap: 'wrap' }}>
+                                            <TouchableOpacity
+                                                onPress={() => Linking.openURL(licenseInfo.link)}
+                                                activeOpacity={0.7}
+                                                style={{ flexDirection: 'row', alignItems: 'center' }}
+                                            >
+                                                <Ionicons name="document-text-outline" size={10} color="#3B82F6" />
+                                                <Text style={{
+                                                    fontSize: 10,
+                                                    color: '#3B82F6',
+                                                    marginLeft: 4,
+                                                    textDecorationLine: 'underline'
+                                                }}>
+                                                    {licenseInfo.name}
+                                                </Text>
+                                            </TouchableOpacity>
+                                            <Text style={{ fontSize: 10, color: '#9CA3AF', marginLeft: 4 }}>
+                                                · Image may be cropped
+                                            </Text>
+                                        </View>
+                                    ) : image.license ? (
+                                        // License without link (like "Public Domain")
+                                        <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 2, flexWrap: 'wrap' }}>
+                                            <Ionicons name="document-text-outline" size={10} color="#9CA3AF" />
+                                            <Text style={{
+                                                fontSize: 10,
+                                                color: '#6B7280',
+                                                marginLeft: 4
+                                            }}>
+                                                {image.license}
+                                            </Text>
+                                            <Text style={{ fontSize: 10, color: '#9CA3AF', marginLeft: 4 }}>
+                                                · Image may be cropped
+                                            </Text>
+                                        </View>
+                                    ) : null}
+                                </View>
+                            );
+                        })}
                     </View>
                 )}
             </View>

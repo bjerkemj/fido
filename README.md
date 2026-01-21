@@ -16,11 +16,6 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
-Todo:
-* Create what is to be seen when the stack is empty
-* check layout of different phones types
-* Wikipedia photos need CC
-
 Final fixes:
 * delete more tab
 * make sure all files has no errors

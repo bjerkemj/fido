@@ -85,7 +85,7 @@ const DogDetailModal = ({ visible, dog, onClose }: DogDetailModalProps) => {
                     <ScrollView
                         style={{ flex: 1 }}
                         contentContainerStyle={{ paddingHorizontal: 24, paddingBottom: 60, paddingTop: 24 }}
-                        showsVerticalScrollIndicator={true}
+                        showsVerticalScrollIndicator={false}
                         bounces={true}
                     >
                         <DogDetailContent dog={dog} />
