@@ -35,7 +35,7 @@ export default function Index() {
         loadDogs();
     }, []);
 
-    // Prefetch images for next 3 dogs
+    // Prefetch images for the next 3 dogs
     useEffect(() => {
         const prefetchNext = async () => {
             const nextDogs = unseenDogs.slice(currentIndex + 2, currentIndex + 5);

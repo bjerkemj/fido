@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { getLikedDogs, getDislikedDogs } from '@/utils/dogStorage';
 import allDogs from '@/assets/data/dogs.json';
 import { Dog } from '@/types/dog';
-import { Ionicons } from '@expo/vector-icons'; // Built into Expo
+import { Ionicons } from '@expo/vector-icons';
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
 const COLUMN_COUNT = 2;
@@ -23,27 +23,22 @@ const ExpandedDogList = () => {
     const accentColor = isLikedView ? '#4ade80' : '#f87171';
     const headerTitle = isLikedView ? 'Liked Dogs' : 'Disliked Dogs';
 
+    const fetchDogs = async () => {
+        const names = isLikedView ? await getLikedDogs() : await getDislikedDogs();
+        const filtered = allDogs.filter(d => names.includes(d.name)) as Dog[];
+        const sorted = filtered.sort((a, b) => a.name.localeCompare(b.name));
+        setDogs(sorted);
+    };
+
+
     useFocusEffect(
         useCallback(() => {
-            const loadDogs = async () => {
-                const names = isLikedView ? await getLikedDogs() : await getDislikedDogs();
-                const filtered = allDogs.filter(d => names.includes(d.name)) as Dog[];
-                const sorted = filtered.sort((a, b) => a.name.localeCompare(b.name));
-                setDogs(sorted);
-            };
-
-            loadDogs();
+            fetchDogs()
         }, [isLikedView]) // Re-run if we switch between liked/disliked
     );
 
     useEffect(() => {
-        const loadDogs = async () => {
-            const names = isLikedView ? await getLikedDogs() : await getDislikedDogs();
-            const filtered = allDogs.filter(d => names.includes(d.name)) as Dog[];
-            const sorted = filtered.sort((a, b) => a.name.localeCompare(b.name));
-            setDogs(sorted);
-        };
-        loadDogs();
+        fetchDogs()
     }, [type]);
 
     return (

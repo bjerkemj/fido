@@ -17,11 +17,10 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```
 
 Final fixes:
-* delete more tab
-* make sure all files has no errors
-* npx expo-doctor
 * go through all dogs
-* privacy/terms: we may earn a commison form you if you purchase through any of the links we proivde
+* what is the splash thingy
+* npx expo-doctor
+* delete more tab
 
 After launch:
 * New Owner Checklist
@@ -32,5 +31,6 @@ After launch:
 * Culture clash
 * Before and After Getting Your Puppy
 * The Power of Positive Dog Training
+* privacy/terms: we may earn a commision from you if you purchase through any of the links we provide
 
 
