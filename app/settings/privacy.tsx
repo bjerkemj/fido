@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
 
                 {/* CONTENT */}
                 <View className="px-6 py-6">
-                    <Text className="text-xs text-gray-400 mb-6">Last Updated: January 20, 2026</Text>
+                    <Text className="text-xs text-gray-400 mb-6">Last Updated: January 22, 2026</Text>
 
                     {/* Privacy First Notice */}
                     <View className="bg-green-50 rounded-xl p-4 mb-6 border-l-4 border-green-400">
