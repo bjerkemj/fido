@@ -1,25 +1,87 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+const CHECKLIST_STORAGE_KEY = 'newOwnerChecklist';
 
 const NewOwnerChecklist = () => {
     const router = useRouter();
     const [checkedItems, setCheckedItems] = useState<{ [key: string]: boolean }>({});
+    const [isLoading, setIsLoading] = useState(true);
 
-    const toggleItem = (id: string) => {
-        setCheckedItems(prev => ({
-            ...prev,
-            [id]: !prev[id]
-        }));
+    // Load checked items from storage on mount
+    useEffect(() => {
+        const loadCheckedItems = async () => {
+            try {
+                const data = await AsyncStorage.getItem(CHECKLIST_STORAGE_KEY);
+                if (data) {
+                    setCheckedItems(JSON.parse(data));
+                }
+            } catch (error) {
+                console.error('Error loading checklist:', error);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        loadCheckedItems();
+    }, []);
+
+    // Save to storage whenever checkedItems changes
+    const toggleItem = async (id: string) => {
+        const newCheckedItems = {
+            ...checkedItems,
+            [id]: !checkedItems[id]
+        };
+
+        setCheckedItems(newCheckedItems);
+
+        try {
+            await AsyncStorage.setItem(CHECKLIST_STORAGE_KEY, JSON.stringify(newCheckedItems));
+        } catch (error) {
+            console.error('Error saving checklist:', error);
+        }
     };
 
     const getProgress = (categoryId: string) => {
-        const categoryItems = Object.keys(checkedItems).filter(key => key.startsWith(categoryId));
-        const checkedCount = categoryItems.filter(key => checkedItems[key]).length;
-        return categoryItems.length > 0 ? Math.round((checkedCount / categoryItems.length) * 100) : 0;
+        // Get all items for this category by checking the JSX
+        const categoryItemCounts: { [key: string]: number } = {
+            'research': 5,
+            'finding': 3,
+            'feeding': 7,
+            'safety': 6,
+            'walking': 7,
+            'sleeping': 4,
+            'toys': 9,
+            'grooming': 10,
+            'training': 4,
+            'health': 6,
+            'services': 5,
+            'financial': 1,
+            'legal': 6,
+            'plan': 1
+        };
+
+        const totalItems = categoryItemCounts[categoryId] || 0;
+        if (totalItems === 0) return 0;
+
+        const checkedCount = Object.keys(checkedItems)
+            .filter(key => key.startsWith(categoryId + '-') && checkedItems[key])
+            .length;
+
+        return Math.round((checkedCount / totalItems) * 100);
     };
+
+    if (isLoading) {
+        return (
+            <SafeAreaView className="flex-1 bg-white items-center justify-center">
+                <Text className="text-gray-600">Loading checklist...</Text>
+            </SafeAreaView>
+        );
+    }
 
     return (
         <SafeAreaView className="flex-1 bg-white">
@@ -283,8 +345,7 @@ const NewOwnerChecklist = () => {
     );
 };
 
-// --- SUB-COMPONENTS ---
-
+// ChecklistCategory and ChecklistItem components remain exactly the same
 const ChecklistCategory = ({
                                title,
                                subtitle,
@@ -348,6 +409,7 @@ const ChecklistCategory = ({
         </View>
     );
 };
+
 const ChecklistItem = ({
                            id,
                            label,
@@ -365,7 +427,8 @@ const ChecklistItem = ({
         className="flex-row items-center py-2"
     >
         <View
-            className={`w-5 h-5 rounded border-2 mr-3 ${checked ? 'bg-blue-500 border-blue-500' : 'border-gray-300'}`}        >
+            className={`w-5 h-5 rounded border-2 mr-3 items-center justify-center ${checked ? 'bg-blue-500 border-blue-500' : 'border-gray-300'}`}
+        >
             {checked && <Ionicons name="checkmark" size={14} color="white" />}
         </View>
         <Text className={`flex-1 text-sm ${checked ? 'text-gray-400 line-through' : 'text-gray-700'}`}>

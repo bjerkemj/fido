@@ -94,7 +94,7 @@ const MatchCenter = () => {
                 </View>
 
                 {/* COMING SECTION */}
-                <View className="mx-6 mb-8 p-6 rounded-3xl bg-yellow-50 border-2 border-yellow-100 flex-row items-center justify-between">
+                <View className="mx-6 mb-8 mt-5 p-6 rounded-3xl bg-yellow-50 border-2 border-yellow-100 flex-row items-center justify-between">
                     {/* Left side: text */}
                     <View className="flex-1 mr-4">
                         <Text className="text-yellow-600 font-bold text-lg">Exciting Updates Ahead!</Text>

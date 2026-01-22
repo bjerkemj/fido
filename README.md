@@ -17,9 +17,6 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```
 
 Final fixes:
-* go through all dogs
-* Find dogs with empty years...
-* Fix checkboxes
 * what is the splash thingy
 * npx expo-doctor
 * delete more tab
