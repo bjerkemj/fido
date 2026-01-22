@@ -19,10 +19,7 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 Find the right dog for you
 
 Final fixes:
-* what is the splash thingy
 * npx expo-doctor
-* delete more tab
-* privacy policy for thrid party apps
 
 After launch:
 * New Owner Checklist

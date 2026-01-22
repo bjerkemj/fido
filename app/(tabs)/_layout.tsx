@@ -89,15 +89,6 @@ const _Layout = () => {
                         focused ? <AnimatedLabel color={color} title="Matches" /> : null,
                 }}
             />
-            <Tabs.Screen
-                name="extra"
-                options={{
-                    title: 'More',
-                    tabBarIcon: ({ color }) => <Ionicons name="ellipsis-horizontal" size={22} color={color} />,
-                    tabBarLabel: ({ focused, color }) =>
-                        focused ? <AnimatedLabel color={color} title="More" /> : null,
-                }}
-            />
         </Tabs>
     );
 };
