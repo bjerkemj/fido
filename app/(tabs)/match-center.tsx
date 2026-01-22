@@ -117,9 +117,6 @@ const MatchCenter = () => {
 
 // --- SUB-COMPONENT ---
 const DogSection = ({ title, dogs, accentColor, count, onPressMore }: { title: string, dogs: Dog[], accentColor: string, count: number, onPressMore: () => void }) => {
-    const displayCount = Math.min(dogs.length, 6);
-    const displayDogs = dogs.slice(0, displayCount);
-    const remainingCount = dogs.length - displayCount;
 
     // Determine layout based on count
     const getLayout = () => {
@@ -198,22 +195,27 @@ const DogSection = ({ title, dogs, accentColor, count, onPressMore }: { title: s
                     className="px-6"
                 >
                     <View className="flex-row flex-wrap justify-between">
-                        {displayDogs.slice(0, 5).map((dog) => (
+                        {dogs.slice(0, dogs.length > 6 ? 5 : 6).map((dog) => (
                             <View key={dog.name} className="mb-4">
                                 <Image
                                     source={{ uri: dog.images[0]?.url }}
                                     style={{ width: (SCREEN_WIDTH - 64) / 3, height: 100 }}
                                     className="rounded-2xl bg-gray-100"
                                 />
-                                <Text numberOfLines={1} className="text-[10px] font-bold text-gray-500 mt-1 w-20 text-center">
+                                <Text numberOfLines={1} className="text-[10px] font-bold text-gray-500 mt-1 w-full text-center">
                                     {dog.name}
                                 </Text>
                             </View>
                         ))}
 
-                        {remainingCount > 0 && (
-                            <View className="mb-4 items-center justify-center bg-gray-100 rounded-2xl" style={{ width: (SCREEN_WIDTH - 64) / 3, height: 100 }}>
-                                <Text className="text-2xl font-bold text-gray-400">+{remainingCount}</Text>
+                        {dogs.length > 6 && (
+                            <View
+                                className="mb-4 items-center justify-center bg-gray-100 rounded-2xl"
+                                style={{ width: (SCREEN_WIDTH - 64) / 3, height: 100 }}
+                            >
+                                <Text className="text-2xl font-bold text-gray-400">
+                                    +{dogs.length - 5}
+                                </Text>
                                 <Text className="text-xs text-gray-500 mt-1">more</Text>
                             </View>
                         )}
