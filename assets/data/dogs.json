@@ -357,6 +357,12 @@
                 "author": "Maddie",
                 "source": "Wikipedia",
                 "license": "CC BY 2.0"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/English_Coonhound_Treed.jpg",
+                "author": "Dchounds",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 4.0"
             }
         ]
     },
@@ -439,10 +445,10 @@
         "demeanor_category": "Friendly",
         "images": [
             {
-                "url": "https://cdn.pixabay.com/photo/2020/06/20/21/52/observer-5322582_1280.jpg",
-                "author": "giovannistrapazzon",
-                "source": "Pixabay",
-                "license": null
+                "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Isabelle-Pose.JPG?20081227175933",
+                "author": "Jonathan Schlegel",
+                "source": "Wikipedia",
+                "license": "CC BY 3.0"
             },
             {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/AmericanFoxhound2.jpg",
@@ -453,6 +459,12 @@
             {
                 "url": "https://cdn.pixabay.com/photo/2015/10/04/10/11/dog-970780_1280.jpg",
                 "author": "jhill365",
+                "source": "Pixabay",
+                "license": null
+            },
+            {
+                "url": "https://cdn.pixabay.com/photo/2020/06/20/21/52/observer-5322582_1280.jpg",
+                "author": "giovannistrapazzon",
                 "source": "Pixabay",
                 "license": null
             }
@@ -1248,6 +1260,12 @@
         "demeanor_category": "Reserved with Strangers",
         "images": [
             {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/2005-09_Zoran_1.jpg?20051104214546",
+                "author": "Ralf Lotys",
+                "source": "Wikipedia",
+                "license": "CC BY 2.5"
+            },
+            {
                 "url": "https://www.flickr.com/photo_download.gne?id=3694263452&secret=f892d8e5f0&size=c&source=photoPageEngagement",
                 "author": "mister b 1138",
                 "source": "Flickr",
@@ -1483,6 +1501,18 @@
             {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Belgian_Laekenois_600.jpg",
                 "author": "Mrs J. Ralph",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 3.0"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Righel_berger_laekenois_120807.jpg/960px-Righel_berger_laekenois_120807.jpg?20070830222803",
+                "author": "Vassil",
+                "source": "Wikipedia",
+                "license": "Public Domain"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Fang-sitt-040728.jpg?20070215220825",
+                "author": "Christoffer Magnerholt",
                 "source": "Wikipedia",
                 "license": "CC BY-SA 3.0"
             }
@@ -1965,8 +1995,14 @@
                 "license": null
             },
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Malahovkaja_Serenada.jpg?20111130172803",
-                "author": "Guidopatek",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Tchiorny_Terrier.jpg/1856px-Tchiorny_Terrier.jpg?20060623153934",
+                "author": "Stephan Czuratis",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 2.5"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Lari_at_the_bridge.png?20110504134332",
+                "author": "Carlyleshl",
                 "source": "Wikipedia",
                 "license": "CC BY-SA 3.0"
             }
@@ -2625,8 +2661,8 @@
         "max_height": 58.42,
         "min_weight": 18.143694800000002,
         "max_weight": 24.947580350000003,
-        "min_expectancy": "",
-        "max_expectancy": "",
+        "min_expectancy": "12",
+        "max_expectancy": "14",
         "group": "Foundation Stock Service",
         "grooming_frequency_value": "0.2",
         "grooming_frequency_category": "Occasional Bath/Brush",
@@ -2646,10 +2682,10 @@
                 "license": null
             },
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/0805_braque_francais_text.jpg?20090207230347",
-                "author": "Johan & Maria Michaëlsson",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Pyreneanpointer1.jpg/640px-Pyreneanpointer1.jpg",
+                "author": "Canarian",
                 "source": "Wikipedia",
-                "license": "CC BY-SA 3.0"
+                "license": "CC BY-SA 4.0"
             }
         ]
     },
@@ -3089,8 +3125,8 @@
         "popularity": 32.0,
         "min_height": 59.69,
         "max_height": 69.85,
-        "min_weight": 0.0,
-        "max_weight": 0.0,
+        "min_weight": 40,
+        "max_weight": 50,
         "min_expectancy": 9.0,
         "max_expectancy": 12.0,
         "group": "Working Group",
@@ -4604,6 +4640,12 @@
                 "author": "Svenska Mässan",
                 "source": "Flickr",
                 "license": null
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Drentsche_Patrijshond_Dutch_Partridge_Dog.JPG/640px-Drentsche_Patrijshond_Dutch_Partridge_Dog.JPG",
+                "author": "Canarian",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 3.0"
             }
         ]
     },
@@ -5377,6 +5419,12 @@
                 "author": "amodelofcontrol",
                 "source": "Flickr",
                 "license": null
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Long_haired_pointer.jpg/1920px-Long_haired_pointer.jpg?20200908203448",
+                "author": "Hallvard.soderholm",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 4.0"
             }
         ]
     },
@@ -6022,10 +6070,10 @@
                 "license": null
             },
             {
-                "url": "https://images.pexels.com/photos/11181909/pexels-photo-11181909.jpeg",
-                "author": "Valeria Boltneva",
-                "source": "Pexels",
-                "license": null
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Greater_Swiss_Mountain_Dog_height.png/960px-Greater_Swiss_Mountain_Dog_height.png?20201013051343",
+                "author": "Ayputs",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 4.0"
             }
         ]
     },
@@ -6112,6 +6160,12 @@
                 "author": "amodelofcontrol",
                 "source": "Flickr",
                 "license": null
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Hamiltoninajokoira2.jpg/1280px-Hamiltoninajokoira2.jpg?20250812185846",
+                "author": "Canarian",
+                "source": "Wikipedia",
+                "license": "CC BY 4.0"
             }
         ]
     },
@@ -6143,6 +6197,12 @@
                 "author": "e2grafikwerkstatt",
                 "source": "Pixabay",
                 "license": null
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/HS_H%C3%BCndin_mit_Voere_LBW_in_Tirol.jpg/960px-HS_H%C3%BCndin_mit_Voere_LBW_in_Tirol.jpg?20110708060140",
+                "author": "Voere",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 3.0"
             },
             {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Hannoverscher_Schweisshund.jpg?20060701212520",
@@ -6177,6 +6237,18 @@
         "images": [
             {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Harrier_Hound_-Pedigree_Harrier.jpg/960px-Harrier_Hound_-Pedigree_Harrier.jpg?20230530122532",
+                "author": "Evforce",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 4.0"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Fair_on_the_Yare_-_Dunstan_Hall_Harrier_Hounds_%28detail%29_-_geograph.org.uk_-_1476718.jpg?20091112113548",
+                "author": "Evelyn Simak",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 2.0"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Eva-5wsm.jpg/1920px-Eva-5wsm.jpg?20210112203140",
                 "author": "Evforce",
                 "source": "Wikipedia",
                 "license": "CC BY-SA 4.0"
@@ -6764,10 +6836,16 @@
                 "license": "CC BY 4.0"
             },
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Grupp_3%2C_TYSK_JAKTTERRIER%2C_Stollfors_Larionov_%2823942381219%29.jpg",
-                "author": "Svenska Mässan",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Jagd_Terrier.jpg/960px-Jagd_Terrier.jpg?20120713025404",
+                "author": "Alexandre Prévot",
                 "source": "Wikipedia",
-                "license": "CC BY 2.0"
+                "license": "CC BY-SA 2.0"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/%C3%81rpa_Jagdterrier_001.jpg/960px-%C3%81rpa_Jagdterrier_001.jpg?20211218191727",
+                "author": "Pochekitalat",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 4.0"
             }
         ]
     },
@@ -6985,6 +7063,12 @@
         "demeanor_category": "",
         "images": [
             {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Karjalankarhukoira%2C_Karelian_Bear_Dog_sitting.jpg/960px-Karjalankarhukoira%2C_Karelian_Bear_Dog_sitting.jpg?20100920135742",
+                "author": "Uusijani",
+                "source": "Wikipedia",
+                "license": "CC0 1.0"
+            },
+            {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Karelski_pies_na_nied%C5%BAwiedzie_LM.jpg/1280px-Karelski_pies_na_nied%C5%BAwiedzie_LM.jpg?20070402170051",
                 "author": "Lilly M",
                 "source": "Wikipedia",
@@ -6995,12 +7079,6 @@
                 "author": "Kaisa Kyöstilä, Julia E. Niskanen, et.al.",
                 "source": "Wikipedia",
                 "license": "CC BY 4.0"
-            },
-            {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Karelski_pies_na_nied%C5%BAwiedzie_sylwetka.JPG/1920px-Karelski_pies_na_nied%C5%BAwiedzie_sylwetka.JPG?20100204210405",
-                "author": "Fraczek.marcin",
-                "source": "Wikipedia",
-                "license": "CC BY-SA 4.0"
             }
         ]
     },
@@ -7475,16 +7553,16 @@
                 "license": null
             },
             {
-                "url": "https://cdn.pixabay.com/photo/2022/11/23/15/29/lancashire-heeler-7612339_1280.jpg",
-                "author": "hansbenn",
-                "source": "Pixabay",
-                "license": null
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Lancashire_Heeler.jpg/960px-Lancashire_Heeler.jpg?20120806015618",
+                "author": "Lil Shepherd",
+                "source": "Wikipedia",
+                "license": "CC BY 2.0"
             },
             {
-                "url": "https://www.flickr.com/photo_download.gne?id=24208350271&secret=608f93b3dd&size=c&source=photoPageEngagement",
-                "author": "Svenska Mässan",
-                "source": "Flickr",
-                "license": null
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Lancashire_heelerit_H%C3%A4meen_linnan_edustalla.jpg/1920px-Lancashire_heelerit_H%C3%A4meen_linnan_edustalla.jpg?20170926181852",
+                "author": "NadaMurola",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 4.0"
             }
         ]
     },
@@ -7518,10 +7596,16 @@
                 "license": null
             },
             {
-                "url": "https://www.flickr.com/photo_download.gne?id=41016885&secret=619cf44487&size=c&source=photoPageEngagement",
-                "author": "wozniaksue1",
-                "source": "Flickr",
-                "license": null
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Lapponian_Herder_black_%26_tan_1.jpg/1092px-Lapponian_Herder_black_%26_tan_1.jpg?20200823181606",
+                "author": "Canarian",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 4.0"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Lapponian_Herder_1.jpg/640px-Lapponian_Herder_1.jpg",
+                "author": "Canarian",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 4.0"
             }
         ]
     },
@@ -7787,6 +7871,12 @@
         "demeanor_value": "0.6",
         "demeanor_category": "Alert/Responsive",
         "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/ToyManchesterTerrier.jpg/960px-ToyManchesterTerrier.jpg?20120718025852",
+                "author": "sally9258",
+                "source": "Wikipedia",
+                "license": "CC BY 2.0"
+            },
             {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Toy-manchester-terrier-weave.png?20060720120311",
                 "author": "Coneslayer",
@@ -8107,6 +8197,18 @@
                 "license": null
             },
             {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mudi_portrait.jpg?20070322223622",
+                "author": "Witte",
+                "source": "Wikipedia",
+                "license": "Public Domain"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Wet_Mudi.jpg?20240311015459",
+                "author": "Qwexcxewq",
+                "source": "Wikipedia",
+                "license": "CC BY 4.0"
+            },
+            {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Mudi_fawn.JPG?20070322222943",
                 "author": "Lily15",
                 "source": "Wikipedia",
@@ -8328,8 +8430,8 @@
         "demeanor_category": "",
         "images": [
             {
-                "url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Norrbottenspets_Karina_2008.jpg/2560px-Norrbottenspets_Karina_2008.jpg",
-                "author": "Manjusha Kennels",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Norrbottenspetz_Koira_2013.JPG/640px-Norrbottenspetz_Koira_2013.JPG",
+                "author": "Томасина",
                 "source": "Wikipedia",
                 "license": "CC BY-SA 3.0"
             },
@@ -8989,10 +9091,10 @@
                 "license": null
             },
             {
-                "url": "https://images.pexels.com/photos/35507984/pexels-photo-35507984.jpeg",
-                "author": "Erwin Bosman",
-                "source": "Pexels",
-                "license": null
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Chien_peruvien.jpg/960px-Chien_peruvien.jpg?20110717154315",
+                "author": "Ajor933",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 3.0"
             },
             {
                 "url": "https://www.flickr.com/photo_download.gne?id=105128553&secret=e9ad5b93dc&size=c&source=photoPageEngagement",
@@ -9161,10 +9263,10 @@
         "demeanor_category": "Alert/Responsive",
         "images": [
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/English-pointer-164115.jpg",
+                "url": "https://cdn.pixabay.com/photo/2013/07/18/14/58/english-pointer-164115_1280.jpg",
                 "author": "No-longer-here",
                 "source": "Pixabay",
-                "license": "CC0 1.0"
+                "license": null
             },
             {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Dogs_Quail_Hunting2.jpg",
@@ -9584,6 +9686,12 @@
         "demeanor_category": "Friendly",
         "images": [
             {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portuguese_pointer_11yo.jpg/1632px-Portuguese_pointer_11yo.jpg?20060629165019",
+                "author": "Afonso Silva",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 3.0"
+            },
+            {
                 "url": "https://www.flickr.com/photo_download.gne?id=8109940484&secret=79a1d08768&size=c&source=photoPageEngagement",
                 "author": "Petful.com",
                 "source": "Flickr",
@@ -9619,6 +9727,12 @@
                 "author": "Pleple2000",
                 "source": "Wikipedia",
                 "license": "CC BY-SA 3.0"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/JR-CSA-LN-NHK.jpg/960px-JR-CSA-LN-NHK.jpg?20210403011950",
+                "author": "Jmanur",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 4.0"
             }
         ]
     },
@@ -9701,10 +9815,16 @@
         "demeanor_category": "",
         "images": [
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Pudelpointer_on_point.jpg",
-                "author": "Arthurrh",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pudelpointer_2.jpg/1280px-Pudelpointer_2.jpg?20210317100422",
+                "author": "Sciencia58",
                 "source": "Wikipedia",
-                "license": "CC BY-SA 3.0"
+                "license": "CC BY-SA 4.0"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Pudelpointer_black_adult_male.jpg?20110616165444",
+                "author": "Fifat",
+                "source": "Wikipedia",
+                "license": "CC BY 3.0"
             }
         ]
     },
@@ -9971,10 +10091,16 @@
         "demeanor_category": "",
         "images": [
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Rafeiro_male.jpg?20110412225601",
-                "author": "Georgepedia",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Rafeiro_do_Alentejo_01.jpg/1920px-Rafeiro_do_Alentejo_01.jpg?20250608164733",
+                "author": "Արարատ Թրվանց",
                 "source": "Wikipedia",
-                "license": "CC0 1.0"
+                "license": "CC BY-SA 4.0"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Rafeirodoalentejobrindlewhite3.jpg/1192px-Rafeirodoalentejobrindlewhite3.jpg?20220623140247",
+                "author": "Canarian",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 4.0"
             }
         ]
     },
@@ -10161,10 +10287,22 @@
         "demeanor_category": "Aloof/Wary",
         "images": [
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Mioritic.jpg",
-                "author": "Summer06",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Mioritic.JPG/960px-Mioritic.JPG?20070910034129",
+                "author": "Bonopufos",
+                "source": "Wikipedia",
+                "license": "Public Domain"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ciobanesc_Mioritic.JPG/1920px-Ciobanesc_Mioritic.JPG?20121113001821",
+                "author": "DorinRodina",
                 "source": "Wikipedia",
                 "license": "CC BY-SA 3.0"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Mioritic_Sheepdog1.jpg?20110316144606",
+                "author": "Emőke Dénes",
+                "source": "Wikipedia",
+                "license": "CC BY-SA 4.0"
             }
         ]
     },
@@ -11602,8 +11740,8 @@
         "popularity": 109.0,
         "min_height": 55.88,
         "max_height": 68.58,
-        "min_weight": "",
-        "max_weight": "",
+        "min_weight": 28,
+        "max_weight": 37,
         "min_expectancy": 10.0,
         "max_expectancy": 12.0,
         "group": "Sporting Group",
@@ -12436,7 +12574,7 @@
         ]
     },
     {
-        "name": "",
+        "name": "Treeing Walker Coonhound",
         "description":
         "Few things can quicken a coon hunter’s pulse like the sight of this swift, tricolored hound in full stride—the long, muscular legs, the powerful and propulsive hindquarters, and the streamlined frame all working to cover maximum ground with minimum effort. Later, basking in the warmth of a campfire after an honest night’s work, this sweet-faced hound will look up and stir your soul with his gentle, pleading expression. Mercy, what a pretty picture! No wonder Treeing Walkers are called the People’s Choice. A smart, brave, and sensible hunter, the Treeing Walker Coonhound is a genuine American favorite, nicknamed \"The People’s Choice.\" Don’t let the name fool you—Walkers are runners and are capable of covering a lot of ground in a hurry.",
         "temperament": "Smart, Brave, Courteous",

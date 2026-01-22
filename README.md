@@ -18,6 +18,8 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 Final fixes:
 * go through all dogs
+* Find dogs with empty years...
+* Fix checkboxes
 * what is the splash thingy
 * npx expo-doctor
 * delete more tab
@@ -32,5 +34,7 @@ After launch:
 * Before and After Getting Your Puppy
 * The Power of Positive Dog Training
 * privacy/terms: we may earn a commision from you if you purchase through any of the links we provide
-
+* dogs with images functionality in index can be changed
+* find all empty weight height life columns
+* Sort out how missing traits are handled
 
