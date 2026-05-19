@@ -10,11 +10,15 @@
     "newArchEnabled": true,
     "ios": {
       "bundleIdentifier": "com.eltauro.fido",
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.eltauro.fido"
     },
     "web": {
       "output": "static"
@@ -32,11 +36,18 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "dde6c2c2-5450-46ad-95e4-a041dd030ed8"
+      }
     }
   }
 }

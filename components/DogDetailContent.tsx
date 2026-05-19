@@ -73,7 +73,7 @@ export const DogDetailContent = ({ dog, showHeader = true }: DogDetailContentPro
             )}
 
             {/* Key Stats */}
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 32, marginHorizontal: -4 }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 24, marginHorizontal: -4 }}>
                 <StatBox
                     label="Weight"
                     value={
@@ -100,9 +100,25 @@ export const DogDetailContent = ({ dog, showHeader = true }: DogDetailContentPro
                 />
             </View>
 
+            {/* Traits */}
+            {(dog.energy_level_category || dog.trainability_category || dog.grooming_frequency_category || dog.shedding_category || dog.demeanor_category) && (
+                <>
+                    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#111827', marginBottom: 16 }}>
+                        Traits
+                    </Text>
+                    <View style={{ backgroundColor: '#F9FAFB', borderRadius: 24, padding: 8, borderWidth: 1, borderColor: '#F3F4F6', marginBottom: 24 }}>
+                        <TraitRow icon="flash-outline" label="Energy" value={dog.energy_level_category} />
+                        <TraitRow icon="school-outline" label="Training" value={dog.trainability_category} />
+                        <TraitRow icon="cut-outline" label="Grooming" value={dog.grooming_frequency_category} />
+                        <TraitRow icon="leaf-outline" label="Shedding" value={dog.shedding_category} />
+                        <TraitRow icon="people-outline" label="Demeanor" value={dog.demeanor_category} />
+                    </View>
+                </>
+            )}
+
             {/* About Section */}
             {fullDescription.length > 0 && (
-                <View style={{ marginBottom: 32 }}>
+                <View>
                     <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#111827', marginBottom: 8 }}>
                         About
                     </Text>
@@ -126,22 +142,6 @@ export const DogDetailContent = ({ dog, showHeader = true }: DogDetailContentPro
                         )}
                     </Text>
                 </View>
-            )}
-
-            {/* Traits */}
-            {(dog.energy_level_category || dog.trainability_category || dog.grooming_frequency_category || dog.shedding_category || dog.demeanor_category) && (
-                <>
-                    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#111827', marginBottom: 16 }}>
-                        Traits
-                    </Text>
-                    <View style={{ backgroundColor: '#F9FAFB', borderRadius: 24, padding: 8, borderWidth: 1, borderColor: '#F3F4F6' }}>
-                        <TraitRow icon="flash-outline" label="Energy" value={dog.energy_level_category} />
-                        <TraitRow icon="school-outline" label="Training" value={dog.trainability_category} />
-                        <TraitRow icon="cut-outline" label="Grooming" value={dog.grooming_frequency_category} />
-                        <TraitRow icon="leaf-outline" label="Shedding" value={dog.shedding_category} />
-                        <TraitRow icon="people-outline" label="Demeanor" value={dog.demeanor_category} />
-                    </View>
-                </>
             )}
 
             {/* Image Credits */}

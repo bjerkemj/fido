@@ -171,8 +171,8 @@ export default function Index() {
 
             {/* FOOTER */}
             <View className="px-6">
-                <View className="mb-1">
-                    <Text className="font-bold text-gray-600 text-2xl">
+                <View className="mb-0">
+                    <Text className="font-bold text-gray-600 text-4xl">
                         {currentDog.name}
                     </Text>
                 </View>
